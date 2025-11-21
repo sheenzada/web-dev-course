@@ -2,4 +2,4 @@ function a(a){
     console.log(a);
     
 }
-a(23)
+a(23);
