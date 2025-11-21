@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simple Animation</title>
+        <style>
+            .container{
+
+            }
+            #animated-box {
+                margin-top: 50px;
+                margin-left: 50px;
+                width: 130px;
+                height: 130px;
+                background-color: red;
+                animation: spin 1ms infinite linear;
+            }
+               #animated-box5 {
+
+                margin-top: 500px;
+                margin-left: 300px;
+
+                width: 130px;
+                height: 130px;
+                background-color: red;
+                animation: spin 1ms infinite linear;
+            }
+            #animated-box2{
+                margin-top: 0px;
+                margin-left: 250px;
+                width: 130px;
+                height: 130px;
+                background-color: yellow;
+                animation: spin 1ms infinite linear;
+            }
+            #animated-box3{
+                 margin-top: 0px;
+                margin-left: 400px;
+                width: 130px;
+                height: 130px;
+                background-color: green;
+                animation: spin 1ms infinite linear;
+            }
+
+             #animated-box4{
+                 margin-top: 0px;
+                margin-left: 600px;
+                width: 130px;
+                height: 130px;
+                background-color: blue;
+                animation: spin 1ms infinite linear;
+            }
+
+            
+            @keyframes spin {
+                from { transform: rotate(0deg);}
+                to{ transform: rotate(360deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div id="animated-box"></div>
+        <div id="animated-box2"></div>
+        <div id="animated-box3"></div>
+        <div id="animated-box4"></div>
+        <div id="animated-box5"></div>
+</div>
+
+    </body>
+</html>

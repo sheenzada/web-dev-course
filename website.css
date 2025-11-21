@@ -1,0 +1,30 @@
+ nav a{
+ text-align: center;
+ padding: 14px  20px;
+ text-decoration: none;
+ color: white;
+}
+nav{
+     background-color: black;
+}
+h2{
+    text-align: center;
+}
+h1{
+    background: gray;
+
+}
+.ali:hover{
+    color: red;
+
+}
+.waris{
+    border-radius: 200px;
+}
+.aaaa{
+    padding: 20px;
+    text-decoration: none;
+}
+.aaaa:hover{
+    color: red;
+}

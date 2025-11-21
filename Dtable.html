@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docter's Visit Appointments</title>
+    <style>
+        table{
+            border: 2px solid lightgray;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+        th,td{
+            padding: 10px;
+            text-align: left;
+            border: 10px solid lightgray;
+        }
+       
+        th{
+            background-color: lightblue;
+            color: white;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+        
+        #footnote{
+            font-size: 12px;
+            animation: highlight 2s ease-in-out alternate infinite;
+        }
+        @keyframes highlight{
+            from{background-color: transparent;}
+            to {background-color: yellow;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Doctor's Visit Appointments</h1>
+    <table>
+        <caption>List of upcoming appointments</caption>
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Doctor</th>
+                <th>Reason for Visit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adil</td>
+                <td>2025-11-21</td>
+                <td>11:00 AM</td>
+                <td>Dr.Nadeem</td>
+                <td>Follow-up</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>2025-11-20</td>
+                <td>3:00 PM</td>
+                <td>Dr.Asif</td>
+                <td>Check-up</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+             <td colspan="5" id="footnote" >* The appointments may subject to change. <br></td>
+                <td colspan="10"><br>
+                    * This table displays a sample list of appointments. <br>
+                    ** Fee Packages :
+                    <ul>
+                        <li>Standard Consultation : Rs.500</li>
+                        <li>Follow-up Visit : Rs.300</li>
+                        <li>Comprehensive Check-up: Rs.1,000</li>
+                    </ul>
+                </td>
+         
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Animation</title>
+    <style>
+        #animated-text{
+            font-size: 20px;
+            color: blue;
+            animation: colorChange 2s infinite alternate;
+        }
+        @keyframes colorChange{
+            from{color:blue}
+            to{color:green}
+            to {color: red;}
+            to {color: aqua;}
+        }
+    </style>
+</head>
+<body>
+    <p id="animated-text">This text will change color  </p>
+    
+</body>
+</html>
