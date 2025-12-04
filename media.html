@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website Example</title>
+
+<style>
+
+/* ---------------------------------------------------
+   GLOBAL STYLES
+------------------------------------------------------ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://picsum.photos/1400/500') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-size: 40px;
+}
+
+/* ---------------------------------------------------
+   CONTENT GRID
+------------------------------------------------------ */
+
+.section {
+    padding: 40px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+   MEDIA QUERIES
+------------------------------------------------------ */
+
+/* ----------- MOBILE (phones) ----------- */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        background: #444;
+        padding: 10px;
+    }
+
+    .hero {
+        font-size: 28px;
+        height: 250px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+/* ----------- TABLET (600px–900px) ----------- */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        font-size: 32px;
+        height: 300px;
+    }
+}
+
+/* ----------- DESKTOP (900px+) ----------- */
+@media only screen and (min-width: 900px) {
+    .hero {
+        height: 450px;
+        font-size: 48px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>My Website</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    Responsive Website
+</div>
+
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">Service One</div>
+        <div class="card">Service Two</div>
+        <div class="card">Service Three</div>
+    </div>
+</div>
+
+</body>
+</html>
