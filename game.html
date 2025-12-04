@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: white;
+      text-align: center;
+    }
+
+    /* Header */
+    .header {
+      background: #222;
+      padding: 15px;
+      font-size: 24px;
+    }
+
+    /* Game area */
+    .game-container {
+      width: 800px;
+      height: 450px;
+      background: #111;
+      margin: 20px auto;
+      border: 3px solid #444;
+      border-radius: 15px;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 12px 25px;
+      background: #ff5722;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background: #e64a19;
+    }
+
+    /* ======== MEDIA QUERIES FOR RESPONSIVE GAME WEBSITE ======== */
+
+    /* Mobile screen */
+    @media screen and (max-width: 600px) {
+      .header {
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      .game-container {
+        width: 95%;
+        height: 250px;
+      }
+
+      .btn {
+        width: 90%;
+        font-size: 20px;
+      }
+    }
+
+    /* Large desktop */
+    @media screen and (min-width: 1100px) {
+      .game-container {
+        width: 1000px;
+        height: 550px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="header">My Game Website</div>
+
+<div class="game-container">
+  <!-- Your game canvas or content goes here -->
+  <p style="padding-top: 200px;">Game Area</p>
+</div>
+
+<button class="btn">Start Game</button>
+
+</body>
+</html>
+📌 What This Example Teache

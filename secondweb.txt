@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../web-dev-course/Second project/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+        <div class="ecourses">
+             <div class="ecourse"><h1>ECOURSES</h1></div>
+            <div class="ecourse"><p><b>Our Office</b><br>Next planer acandmy(skd)</p></div>
+            <div class="ecourse"><p><b>Email</b><br>Yaseenmalik@gmail.com</p></div>
+            <div class="ecourse"><p><b>Cell us</b><br>03554718956</p></div>
+        </div>
+        <hr>
+        <div class="navegaction">
+            <div class="subject"><h1><a href="">Subject</a></h1></div>
+            <div class="navbar">
+            <div class="nav"><a href="">Home</a></div>
+            <div class="nav"><a href="">About</a></div>
+            <div class="nav"><a href="">Course</a></div>
+            <div class="nav"><a href="">Developers</a></div>
+            <div class="nav"><a href="">Blogs</a></div>
+            <div class="nav">Contact</div>
+        </div>
+            <div class="joint"><button>Joint Us</button></div>
+            <div id="dark">
+          <!-- <label for="darkChek"> <img src="./img/like-heart-round-line-icon.png" alt="" ></label>
+         <input type="checkbox" id="darkChek" onclick="dark()"> -->
+         <select name="" id="drack1" onchange="dark(this)">
+          <option value="0">Dark</option>
+        <option value="1" id="darkChek" >light mode</option>
+        <option value="2" id="darkChek">Dark mode</option>
+      </select>
+        </div>
+        </div>
+    </header>
+    <div class="homescreen">
+        <div class="home1"><h2>Best online coures</h2><h1>Best Education From</h1><h1>Your Home</h1><button><a href="" style="text-decoration: none; color: white;">Learn More</a></button></div>
+    </div>
+
+    <div class="aboutus">
+        <div class="contact"><img src="../Second project/img/about.jpg" alt=""></div>
+        <div class="contact1"><h2>About us</h2><h1>Innovative Way To Learn</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam corrupti obcaecati eius veniam, labore doloremque fuga eaque placeat, ex porro debitis, voluptatibus praesentium enim aspernatur laudantium vero. Quam mollitia dolores, a quia nam aut expedita? Iste quo eius modi fugiat sapiente, illo similique, accusamus quasi amet quia tenetur id odit possimus asperiores repudiandae consequuntur sequi est. Quidem obcaecati necessitatibus tempora modi excepturi suscipit tenetur voluptas, omnis reiciendis accusantium quibusdam ut placeat voluptate nulla animi aliquid libero magnam quam corrupti debitis praesentium error. Odio ex adipisci nostrum ut iusto. Pariatur voluptates repellendus nobis amet sint! Facilis in quas architecto ut consectetur.<p><button><a href=""style="text-decoration: none; color: white;">learn More</a></button></div>
+    </div>
+     
+    <div class="explore">
+        <h2 style="color: orangered; font-size: 30px;">Subject</h2>
+        <h1 style="color: rgba(14, 1, 4, 0.692);">Explore Top Subject</h1>
+        <div class="explore1">
+            <div class="expl1"><h2>Developer</h2><h3>100 courses</h3></div>
+            <div class="expl2"><h2>App disgn</h2><h3>100 courses</h3></div>
+            <div class="expl3"><h2>Game disgn</h2><h3>100 courses</h3></div>
+            <div class="expl4"><h2>Graphic disgn</h2><h3>100 courses</h3></div>
+        </div>
+        <div class="explore2">
+            <div class="expl5"><h2>Marketing</h2><h3>100 courses</h3></div>
+            <div class="expl6"><h2>Flutter</h2><h3>100 courses</h3></div>
+            <div class="expl7"><h2>Freelancing</h2><h3>100 courses</h3></div>
+            <div class="expl8"><h2>Canva</h2><h3>100 courses</h3></div>
+        </div>
+    </div>
+<!-- our popular course -->
+    <div class="popularcourse">
+        <h2 style="color: orangered; font-size: 30px; text-align: center;">Subject</h2>
+        <h1 style="color: black;text-align: center;">Our Popular Course</h1>
+        <div class="courses">
+             <div class="course1"><img style="border-radius: 20px;" src="../Second project/img/course-1.jpg" alt="" width="100%" height="370px"><div class="one">24 Student <div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment <br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course2"><img  style="border-radius: 20px;" src="../Second project/img/course-2.jpg" alt=""  width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course3"><img  style="border-radius: 20px;" src="../Second project/img/course-3.jpg" alt="" width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+        </div>
+        <div class="courses1">
+             <div class="course4"><img  style="border-radius: 20px;" src="../Second project/img/course-4.jpg" alt="" width="100%" height="370px"><div class="one">24 Student <div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course5"><img  style="border-radius: 20px;" src="../Second project/img/course-5.jpg" alt=""  width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course6"><img  style="border-radius: 20px;" src="../Second project/img/course-6.jpg" alt="" width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+        </div>
+    </div>
+    <!-- need any course -->
+    <div class="choose"> <div class="choose1"><h2 style="color: rgb(255, 153, 1); font-size: 29px;">Need any course</h2> <h1>30% off For New Students</h1><p style="color: white; font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus pariatur deleniti velit tenetur. Autem consequuntur voluptatibus assumenda molestiae nihil, veritatis ab cumque. Laboriosam, voluptatum. Quasi cum officiis quo nobis dolorem enim, dolore officia, autem consequuntur eius maiores numquam consequatur corporis recusandae aperiam veritatis ab est nam reiciendis facilis porro!</p></div>
+    <div class="choose2"><form action=""><h2 style="background-color: aliceblue; width: 100%; height: 10vh; text-align: center; font-size: 40px; margin-top: 5px;">Sign in now</h2><br>
+        <input type="text" placeholder="Enter your name" required><br>
+        <input type="Email" placeholder="Enter your email" required><br>
+        <select name="" id="" style="font-size: 20px; width: 250px;">
+        <option>Java</option>
+        <option>C++</option>
+        <option>Css</option>
+        </select>
+        <input style="background-color: blue;" type="submit">
+        
+    </form></div>
+    </div>
+    <!-- our develapers -->
+     <div class="teachers">
+        <h2 style="color: orange;">Our Develaper</h2>
+        <h2>Meet Our Develaper</h2>
+        <div class="teacher1">
+            <div class="tech1"><img style="border-radius: 10px;" src="../Second project/img/team-1.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+            <div class="tech2"><img style="border-radius: 10px;" src="../Second project/img/team-2.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+            <div class="tech3"><img style="border-radius: 10px;" src="../Second project/img/team-3.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+            <div class="tech4"><img style="border-radius: 10px;" src="../Second project/img/team-4.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+        </div>
+     </div>
+     <!-- our Blogs -->
+      <div class="blogs">
+        <h2>Our Blogs</h2>
+        <h2>Latest From Our Blogs</h2>
+        <div class="blog">
+            <div class="blog1"><h2>Book self</h2></div>
+            <div class="blog2"><h2>Confused</h2></div>
+            <div class="blog3"><h2>Focus</h2></div>
+        </div>
+      </div>
+      <!-- footer area -->
+       <div class="footer">
+        <div class="footerfirst">
+            <h2 style="color: tomato; font-size: 30px;">GET IN TOUCH</h2>
+            <p>123 street,new york,uk</p>
+            <p>03554718956</p>
+            <p>Yaseenmalik@gmail.com</p>
+            <button></button><button></button><button></button><button></button>
+        </div>
+        <div class="footerfirst">
+            <h2  style="color: tomato; font-size: 30px;">OUR COURSE</h2>
+            <p>Web dign</p>
+            <p>App dign</p>
+            <p>Marketing</p>
+            <p>SCO</p>
+        </div><div class="footersecond">
+            <h2  style="color: tomato; font-size: 30px;">NEWSLATTER</h2>
+            <p>Lorem ipsums veritatis eum repudiand Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aperiam voluptatibus ad.aliquid eos vel. Nostrum modi eaque incidunt nisi!</p>
+            <form action=""><input type="email" placeholder="Enter your email" required id="ft"><input type="submit" id="ft1"></form>
+        </div><br>
+       </div>
+        <div class="adress">© Domain Name. All Rights Reserved. Designed by Yaseen malik</div>
+</body>
+</html>
