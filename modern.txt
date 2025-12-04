@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Modern Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">MyWebsite</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to a Beautiful Website</h2>
+        <p>Your modern, clean, responsive web design example.</p>
+        <button class="btn" onclick="scrollToSection('about')">Learn More</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            We create elegant, responsive, and interactive websites using modern web technologies.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Web Design</h3>
+            <p>Clean, professional, and modern UI design.</p>
+        </div>
+        <div class="service-box">
+            <h3>Development</h3>
+            <p>Fast, secure, and scalable websites.</p>
+        </div>
+        <div class="service-box">
+            <h3>Branding</h3>
+            <p>Creative digital identity for your business.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <button class="btn" onclick="showMessage()">Get in Touch</button>
+        <p id="message"></p>
+    </section>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
