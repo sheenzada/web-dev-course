@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.head{
+    width: 100%;
+    height: 23vh;
+}
+.ecourses{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(206, 159, 102, 0.788);
+}
+.navegaction{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.navegaction .subject{
+    width: 20%;
+    height: 10vh;
+    top: 10px;
+    font-size:15px;
+    background-color: rgba(255, 166, 0, 0.767);
+    text-align: center;
+}
+.navegaction .subject a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.subject:hover{
+    background-color: rgb(255, 145, 0);
+}
+.navegaction .navbar{
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+.navbar .nav a{
+    text-decoration: none;
+    color: black;
+}
+.ecourses h1::first-letter{
+    color: rgb(255, 102, 0);
+    font-size: 35px;
+}
+.nav a:hover{
+    color: rgb(255, 102, 0);
+}
+.joint{
+    width: 10%;
+}
+.joint button{
+ 
+    height: 4vh;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 68, 0, 0.849);
+    margin-top: 5px;
+
+}
+.joint button:hover{
+    background-color: rgb(240, 65, 1);
+}
+/* home screen page */
+.homescreen{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/carousel-1.jpg);
+    background-size: 100% 100vh;
+
+    display: flex;
+}
+.home1{
+    margin-top: 20vh;
+    margin-left: 40vh;
+    color: rgb(231, 217, 198);
+    font-size:20px;
+    font-weight: bolder;
+}
+.home1 h2{
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home1 h1{
+    font-size: 60px;
+}
+.home1 button{
+    width: 29%;
+    height: 6vh;
+    font-size: 18px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    
+}
+.aboutus{
+    width: 100%;
+    height: 90vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(255, 166, 0, 0.685);
+    border-radius: 20px;
+
+}
+.contact1 button{
+    width: 29%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: orangered;
+    font-size: 24px;
+    border: none;
+    color: white;
+}
+.contact{
+    width: 45%;
+    height: 80vh;
+    border-radius: 10px;
+}
+.contact1{
+    width: 45%;
+    height: 80vh;
+
+}
+.contact img{
+    border-radius: 10px;
+    width: 90%;
+    height: 70vh;
+}
+.contact1 h2{
+    font-size: 24px;
+    color: orangered;
+}
+.contact1 h1{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact1 p{
+    font-size: 18px;
+    line-height: 28px;
+}
+/* explore top subject */
+.explore{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.452);
+    border-radius: 20px;
+    /* background-color:rgba(255, 166, 0, 0.733); */
+    
+}
+.explore1, .explore2{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    margin-left: 4%;
+    margin-top: 3vh;
+    justify-content: space-around;
+}
+.explore1 h2, .explore2 h2{
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+}
+.explore1 h3, .explore2 h3{
+    color: rgb(255, 255, 255);
+}
+.expl1{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: rgb(204, 198, 198);
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-1.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8;
+    transition: 1111ms;
+    text-align: center;
+
+
+}
+.expl1:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.expl2{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: white;
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-2.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8;
+    transition: 1111ms;
+    text-align: center;
+}
+.expl2:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,10);
+}
+.expl3{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: white;
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-3.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8 ;
+    transition: 1111ms;
+    text-align: center;
+}
+.expl3:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,0.10);
+}
+.expl4{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: white;
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-4.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8 ;
+    transition: 1111ms;
+    text-align: center;
+}
+.expl4:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,10);
+}
+.expl5{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: white;
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-5.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8 ;
+    transition: 1111ms;
+    text-align: center;
+}
+.expl5:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,10);
+}
+.expl6{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: white;
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-6.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8 ;
+    transition: 1111ms;
+    text-align: center;
+}
+.expl6:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,10);
+}
+.expl7{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: white;
+    background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+    background-image: url(../img/cat-7.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8 ;
+    transition: 1111ms;
+    text-align: center;
+}
+.expl7:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,10);
+}
+.expl8{
+    width: 23%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    background-image:linear-gradient( rgba(0,0,0,10),rgba(0,0,0,10)) ;
+    background-image: url(../img/cat-8.jpg);
+    background-size: 100% 30vh;
+    background-repeat: no-repeat;
+    opacity: .8 ;
+    transition: 1111ms;
+    text-align: center;
+
+}
+.expl8:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,10);
+}
+/* popular course page */
+.courses{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    
+}
+.course1{
+    width: 32%;
+    height: 90vh;
+    background-color: rgb(235, 235, 230);
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.course2{
+    width: 32%;
+    height: 90vh;
+    background-color: rgb(235, 235, 230);
+    margin-left: 20px;
+    border-radius: 20px;
+    
+}
+.course3{
+    width: 32%;
+    height: 90vh;
+    background-color: rgb(235, 235, 230);
+    margin-left: 25px;
+    border-radius: 20px;
+    
+
+}
+.one{
+    width: 32%;
+    height: 2vh;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+.two{
+    width: 30%;
+    margin-left: 46%;
+}
+.headingpopul{
+    font-size:20px;
+    text-align: center;
+}
+.courses1{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+}
+.course4{
+    width: 32%;
+    height: 90vh;
+    background-color: rgb(235, 235, 230);
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+.course5{
+    width: 32%;
+    height: 90vh;
+    background-color: rgb(235, 235, 230);
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+.course6{
+    width: 32%;
+    height: 90vh;
+    background-color: rgb(235, 235, 230);
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+
+
+.one{
+    width: 95%;
+    height: 2vh;
+    
+    display: flex;
+}
+.two{
+    width: 95%;
+    margin-left: 46%;
+}
+.headingpopul{
+    font-size:20px;
+    text-align: center;
+}
+/* need any course */
+.choose{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/registration.jpg);
+    background-size: 100% 110vh;
+    background-repeat: no-repeat;
+    display: flex ;
+    justify-content: space-around;
+}
+.choose1{
+    margin-top: 90px;
+    width: 40%;
+    height: 60vh;
+}
+.choose1 h1{
+    color: aliceblue;
+    font-size: 40px;
+}
+.choose2{
+    margin-top: 90px ;
+    width: 40%;
+    height: 70vh;
+    text-align: center;
+    background-color: aliceblue;
+}
+.choose2 form{
+    width: 100%;
+    height: 70vh;
+    background-color: tomato;
+    text-align: center;
+}
+.choose2 input, .choose2 select{
+    width: 70%;
+    height: 7vh;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+/* meet our develaper */
+.teachers{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+.teacher1{
+   display: flex;
+   justify-content: space-around;
+}
+.tech1{
+    background-color: rgb(214, 212, 209);
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+.tech2{
+    background-color: rgb(214, 212, 209);
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+.tech3{
+    background-color: rgb(214, 212, 209);
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+.tech4{
+    background-color: rgb(214, 212, 209);
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+/* Our Blogs */
+.blogs{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    
+}
+.blog{
+    justify-content: space-around;
+    display: flex;
+}
+.blog1 h2{
+    color: aliceblue;
+    font-size: 30px;
+
+}
+.blog1{
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 213, 209);
+    background-image: url(../img/blog-1.jpg);
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+}
+.blog2 h2{
+    color: aliceblue;
+    font-size: 30px;
+
+}
+.blog2{
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 213, 209);
+    background-image: url(../img/blog-2.jpg);
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+}
+.blog3 h2{
+    color: aliceblue;
+    font-size: 30px;
+
+}
+.blog3{
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 213, 209);
+    background-image: url(../img/blog-3.jpg);
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+}
+/* Foooter section */
+.footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-color: rgb(3, 2, 88);
+    justify-content: space-evenly;
+}
+.footerfirst{
+    width: 40%;
+    height: 25vh;
+    font-size: 17px;
+    color: aliceblue;    
+}
+.footersecond{
+    width: 50%;
+    height: 25vh;
+    color: rgba(230, 228, 225, 0.932);    
+
+}
+.footer .footerfirst button{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: rgb(0, 1, 87);
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
+    transition: 2s;
+}
+.footer .footerfirst button:hover{
+    background-color: rgb(255, 255, 255);
+}
+#ft{
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+#ft1{
+    font-size: 25px;
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+.adress{
+    width: 100%;
+    height: 7vh;
+    background-color:  rgb(3, 2, 88);  
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+/* media */
+
+@media only screen and (max-width: 1500px) {
+
+    .ecourses{
+        height: 6vh;
+        font-size: 10px;
+    }
+    .ecourses h2{
+        font-size: 20px;
+    }
+    .navegaction .subject{
+        height: 6vh;
+        top: 10;
+        font-size: 16px;
+    }
+    .navegaction{
+        height: 29vh;
+    }
+    .homescreen{
+    height: 70vh;
+    }
+    .aboutus{
+        height: 60vh;
+    }
+    .contact img{
+        height: 50vh;
+    }
+    .contact{
+        height: 55vh;
+    }
+    .contact1{
+        height: 55vh;
+    }
+    .explore{
+        height: 70vh;
+    }
+   .expl1{
+        height: 20vh;
+    } 
+    .expl2{
+        height: 20vh;
+    } 
+    .expl3{
+        height: 20vh;
+    } 
+    .expl4{
+        height: 20vh;
+    }     
+     .expl5{
+        height: 20vh;
+    } 
+     .expl6{
+        height: 20vh;
+    } 
+     .expl7{
+        height: 20vh;
+    } 
+     .expl8{
+        height: 20vh;
+    } 
+    .courses{
+        height: 55vh;
+    }
+    .course1{
+        height: 50vh;
+    }
+    .course2{
+        height: 50vh;
+    }
+    .course3{
+        height: 50vh;
+    }
+    .courses1{
+        height: 55vh;
+    }
+    .course4{
+        height: 50vh;
+    }
+    .course5{
+        height: 50vh;
+    }
+    .course6{
+        height: 50vh;
+    }
+    .choose{
+        height: 70vh;
+    }
+    .choose2 form{
+        height: 50vh;
+     
+    }
+    .choose2{
+        height: 50vh;
+    
+    }
+    .choose2 input, .choose2 select{
+        height: 45px;
+    }
+    .teachers{
+        height: 40vh;
+    }
+    .tech1{
+        height: 30vh;
+    }.tech2{
+        height: 30vh;
+    }
+    .tech3{
+        height: 30vh;
+    }
+    .tech4{
+        height: 30vh;
+    }
+    .blogs{
+        height: 50vh;
+    }
+    .blog1{
+        height: 30vh;
+    }
+    .blog2{
+        height: 30vh;
+    }
+    .blog3{
+        height: 30vh;
+    }
+    .footer{
+        height: 40vh;
+    }
+</style>
+<body>
+    <header class="head">
+        <div class="ecourses">
+             <div class="ecourse"><h1>ECOURSES</h1></div>
+            <div class="ecourse"><p><b>Our Office</b><br>Next planer acandmy(skd)</p></div>
+            <div class="ecourse"><p><b>Email</b><br>Yaseenmalik@gmail.com</p></div>
+            <div class="ecourse"><p><b>Cell us</b><br>03554718956</p></div>
+        </div>
+        <hr>
+        <div class="navegaction">
+            <div class="subject"><h1><a href="">Subject</a></h1></div>
+            <div class="navbar">
+            <div class="nav"><a href="">Home</a></div>
+            <div class="nav"><a href="">About</a></div>
+            <div class="nav"><a href="">Course</a></div>
+            <div class="nav"><a href="">Developers</a></div>
+            <div class="nav"><a href="">Blogs</a></div>
+            <div class="nav">Contact</div>
+        </div>
+            <div class="joint"><button>Joint Us</button></div>
+            <div id="dark">
+          <!-- <label for="darkChek"> <img src="./img/like-heart-round-line-icon.png" alt="" ></label>
+         <input type="checkbox" id="darkChek" onclick="dark()"> -->
+         <select name="" id="drack1" onchange="dark(this)">
+          <option value="0">Dark</option>
+        <option value="1" id="darkChek" >light mode</option>
+        <option value="2" id="darkChek">Dark mode</option>
+      </select>
+        </div>
+        </div>
+    </header>
+    <div class="homescreen">
+        <div class="home1"><h2>Best online coures</h2><h1>Best Education From</h1><h1>Your Home</h1><button><a href="" style="text-decoration: none; color: white;">Learn More</a></button></div>
+    </div>
+
+    <div class="aboutus">
+        <div class="contact"><img src="../Second project/img/about.jpg" alt=""></div>
+        <div class="contact1"><h2>About us</h2><h1>Innovative Way To Learn</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam corrupti obcaecati eius veniam, labore doloremque fuga eaque placeat, ex porro debitis, voluptatibus praesentium enim aspernatur laudantium vero. Quam mollitia dolores, a quia nam aut expedita? Iste quo eius modi fugiat sapiente, illo similique, accusamus quasi amet quia tenetur id odit possimus asperiores repudiandae consequuntur sequi est. Quidem obcaecati necessitatibus tempora modi excepturi suscipit tenetur voluptas, omnis reiciendis accusantium quibusdam ut placeat voluptate nulla animi aliquid libero magnam quam corrupti debitis praesentium error. Odio ex adipisci nostrum ut iusto. Pariatur voluptates repellendus nobis amet sint! Facilis in quas architecto ut consectetur.<p><button><a href=""style="text-decoration: none; color: white;">learn More</a></button></div>
+    </div>
+     
+    <div class="explore">
+        <h2 style="color: orangered; font-size: 30px;">Subject</h2>
+        <h1 style="color: rgba(14, 1, 4, 0.692);">Explore Top Subject</h1>
+        <div class="explore1">
+            <div class="expl1"><h2>Developer</h2><h3>100 courses</h3></div>
+            <div class="expl2"><h2>App disgn</h2><h3>100 courses</h3></div>
+            <div class="expl3"><h2>Game disgn</h2><h3>100 courses</h3></div>
+            <div class="expl4"><h2>Graphic disgn</h2><h3>100 courses</h3></div>
+        </div>
+        <div class="explore2">
+            <div class="expl5"><h2>Marketing</h2><h3>100 courses</h3></div>
+            <div class="expl6"><h2>Flutter</h2><h3>100 courses</h3></div>
+            <div class="expl7"><h2>Freelancing</h2><h3>100 courses</h3></div>
+            <div class="expl8"><h2>Canva</h2><h3>100 courses</h3></div>
+        </div>
+    </div>
+<!-- our popular course -->
+    <div class="popularcourse">
+        <h2 style="color: orangered; font-size: 30px; text-align: center;">Subject</h2>
+        <h1 style="color: black;text-align: center;">Our Popular Course</h1>
+        <div class="courses">
+             <div class="course1"><img style="border-radius: 20px;" src="../Second project/img/course-1.jpg" alt="" width="100%" height="370px"><div class="one">24 Student <div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment <br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course2"><img  style="border-radius: 20px;" src="../Second project/img/course-2.jpg" alt=""  width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course3"><img  style="border-radius: 20px;" src="../Second project/img/course-3.jpg" alt="" width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+        </div>
+        <div class="courses1">
+             <div class="course4"><img  style="border-radius: 20px;" src="../Second project/img/course-4.jpg" alt="" width="100%" height="370px"><div class="one">24 Student <div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course5"><img  style="border-radius: 20px;" src="../Second project/img/course-5.jpg" alt=""  width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+             <div class="course6"><img  style="border-radius: 20px;" src="../Second project/img/course-6.jpg" alt="" width="100%" height="370px"><div class="one">24 Student<div class="two">1h50min</div></div><div class="headingpopul"><h2>web-develapment<br>  course</h2></div><hr><div class="one">4.3 <div class="two">$99</div></div></div>
+        </div>
+    </div>
+    <!-- need any course -->
+    <div class="choose"> <div class="choose1"><h2 style="color: rgb(255, 153, 1); font-size: 29px;">Need any course</h2> <h1>30% off For New Students</h1><p style="color: white; font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus pariatur deleniti velit tenetur. Autem consequuntur voluptatibus assumenda molestiae nihil, veritatis ab cumque. Laboriosam, voluptatum. Quasi cum officiis quo nobis dolorem enim, dolore officia, autem consequuntur eius maiores numquam consequatur corporis recusandae aperiam veritatis ab est nam reiciendis facilis porro!</p></div>
+    <div class="choose2"><form action=""><h2 style="background-color: aliceblue; width: 100%; height: 10vh; text-align: center; font-size: 40px; margin-top: 5px;">Sign in now</h2><br>
+        <input type="text" placeholder="Enter your name" required><br>
+        <input type="Email" placeholder="Enter your email" required><br>
+        <select name="" id="" style="font-size: 20px; width: 250px;">
+        <option>Java</option>
+        <option>C++</option>
+        <option>Css</option>
+        </select>
+        <input style="background-color: blue;" type="submit">
+        
+    </form></div>
+    </div>
+    <!-- our develapers -->
+     <div class="teachers">
+        <h2 style="color: orange;">Our Develaper</h2>
+        <h2>Meet Our Develaper</h2>
+        <div class="teacher1">
+            <div class="tech1"><img style="border-radius: 10px;" src="../Second project/img/team-1.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+            <div class="tech2"><img style="border-radius: 10px;" src="../Second project/img/team-2.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+            <div class="tech3"><img style="border-radius: 10px;" src="../Second project/img/team-3.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+            <div class="tech4"><img style="border-radius: 10px;" src="../Second project/img/team-4.jpg" width="100%" height="225vh" alt=""><h2 style="font-size: 40px;">Yaseen malik</h2> <h3>Web Develaper</h3></div>
+        </div>
+     </div>
+     <!-- our Blogs -->
+      <div class="blogs">
+        <h2>Our Blogs</h2>
+        <h2>Latest From Our Blogs</h2>
+        <div class="blog">
+            <div class="blog1"><h2>Book self</h2></div>
+            <div class="blog2"><h2>Confused</h2></div>
+            <div class="blog3"><h2>Focus</h2></div>
+        </div>
+      </div>
+      <!-- footer area -->
+       <div class="footer">
+        <div class="footerfirst">
+            <h2 style="color: tomato; font-size: 30px;">GET IN TOUCH</h2>
+            <p>123 street,new york,uk</p>
+            <p>03498405661</p>
+            <p>sheenzada7@gmail.com</p>
+            <button></button><button></button><button></button><button></button>
+        </div>
+        <div class="footerfirst">
+            <h2  style="color: tomato; font-size: 30px;">OUR COURSE</h2>
+            <p>Web dign</p>
+            <p>App dign</p>
+            <p>Marketing</p>
+            <p>SCO</p>
+        </div><div class="footersecond">
+            <h2  style="color: tomato; font-size: 30px;">NEWSLATTER</h2>
+            <p>Lorem ipsums veritatis eum repudiand Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aperiam voluptatibus ad.aliquid eos vel. Nostrum modi eaque incidunt nisi!</p>
+            <form action=""><input type="email" placeholder="Enter your email" required id="ft"><input type="submit" id="ft1"></form>
+        </div><br>
+       </div>
+        <div class="adress">© Domain Name. All Rights Reserved. Designed by Inam Ullah </div>
+</body>
+</html>
