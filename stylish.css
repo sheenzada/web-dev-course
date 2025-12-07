@@ -1,0 +1,70 @@
+/*.....nav section.....*/
+
+
+body{
+    margin: 0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background-image: url(img/menuicon.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-link {
+    color: black !important;
+    font-weight:500;
+}
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.hero h1{
+    font-size: 7rem;
+    font-weight: 900;
+    color: #000;
+    z-index: 1;
+    font-family: 'Poppins',sans-serif;
+}
+.cloud-img{
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+span{
+    font-size: 11rem;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.hero-img{
+    width: 500px;
+    margin: 30px auto;
+    display: block;
+    position: absolute;
+    bottom: 95px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+}
+.animate-item{
+    opacity: 0;
+    transition: opacity 2s ease , transform 2s ease;
+}
+.animate-item.show{
+    opacity: 1;
+    
+}
