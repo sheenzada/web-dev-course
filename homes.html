@@ -244,11 +244,13 @@
         }
      }
      .container{
-        width:100%;
-        height: 100vh;
+        
+        width:99%;
+        height: 80vh;
         display: flex;
+        background-color: aqua;
      }
-     .conta{
+     .conta-1{
         width: 500px;
         height: 450px;
         margin-top: 40px;
@@ -257,21 +259,109 @@
         border: none;
         background-image: url(img/about.jpg);
         background-repeat: no-repeat;
+        background-size: 100% 100vh;
+     }
+        .conta-2{
+        width: 700px;
+        height: 450px;
+       
+        margin-left: 20px;
+        border-radius: 10px;
+        border: none;
+       
+        background-repeat: no-repeat;
         background-size: cover;
      }
-     .about{
-        margin-left: 70px;
-        margin-top: 59px;
-        font-size: 30px;
-        color: red;
-     }
+   
      .abou{
         margin-left: -120px;
         margin-top: 99px;
         font-size: 40px;
         color: black;
      }
-    
+     .pararr{
+        color: white;
+     }
+     .achonda{
+        font-size: 20px;
+     }
+     .about{
+     margin-top: 59px;
+        color:#ff7200;
+             }
+             .learnway{
+                font-size: 30px;
+             }
+    @media screen and (max-width:992px){
+        .achonda{
+            font-size: 14px;
+            margin-top: -19px;
+
+        }
+    }
+    @media screen and (max-width:992px){
+        .about{
+            font-size: 34px;
+            margin-top: 35px;
+
+        }
+    }
+     @media screen and (max-width:992px){
+        .learnway{
+            font-size: 30px;
+            margin-top: -15px;
+
+        }
+    }
+    @media screen and (max-width:768px){
+        .learnway{
+            font-size: 25px;
+        }
+    }
+    @media screen and (max-width:768px){
+        .achonda{
+            font-size: 10px;
+    }
+}
+      @media screen and (max-width:576px){
+        .achonda{
+            font-size: 14px;
+    }
+}
+@media screen and (max-width:568px){
+    .conta-1{
+        width: 600px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:568px){
+        .learnway{
+            font-size: 20px;
+        }
+    }
+@media screen and (max-width:568px){
+    .about{
+        margin-top: 40px;
+    }
+}
+ @media screen and (max-width:568px){
+        .learnway{
+            font-size: 25px;
+            margin-top: -10px;
+        }
+    }
+ @media screen and (max-width:568px){
+        .achonda{
+            font-size: 14px;
+
+    }
+}
+@media screen and (max-width:1200px){
+      .achonda{
+            font-size: 25px;
+
+    }
+}
 
 </style>
 <body>
@@ -303,11 +393,12 @@
             </div>
         </div>
         <div class="container">
-            <div class="conta"></div>
-            <div class="about"><b>About Us</b></div>
-            <div class="abou"><b>Innovative Way To Learn</b></div>
-            
-            
-
+            <div class="conta-1"></div>
+           <div class="conta-2">
+          <h2 class="about">About us</h2>
+            <h3 class="learnway">Inociative way to learn</h3>
+          <p class="achonda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in ratione blanditiis dolore quo consequuntur nulla inventore aliquid numquam rem aliquam doloremque sequi enim, voluptatum saepe quis soluta voluptatem corporis.sssl Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos, commodi deleniti eius doloribus pariatur provident eligendi nesciunt! Sit consequuntur et, perspiciatis asperiores unde nesciunt dolores perferendis illo laboriosam iste ad repudiandae, at fugiat facere obcaecati amet voluptatibus enim  ipsam quasi odio laborum, ullam explicabo aperiam eos dolor rerum alias quidem ab  ratione expedita aliquid minima nesciunt nostrum magnam!</p>
+           </div>
+            </div>
 </body>
 </html>
