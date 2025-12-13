@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PRAROZ</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Century;
+    }
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(img/hong-kong-apartment-block.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        min-height: 100px;
+    }
+    ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+        min-height: 400px;
+        margin-right: 40px;
+        font-size: 16px;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
+    }
+    ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    ul li.active a {
+        background-color: #fff;
+        color: #000;
+    }
+    .logo img{
+        float: left;
+        width: 150px;
+        height: auto;
+    }
+    .main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .title{
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .title h1{
+        color: #fff;
+        font-size: 70px;
+    }
+    .button{
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .btn{
+        border: 1px solid #fff;
+        padding: 5px 20px;
+        color: #fff;
+        transition: 0.5 ease;
+        font-size: 18px;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .sub-menu{
+        display: none;
+        top: 2%;
+        position: relative;
+    }
+    .sub-menu ul{
+        position: absolute;
+    }
+    .main ul li:hover .sub-menu{
+        display: block;
+        position: absolute;
+        background-color: rgba(0 , 45 , 117);
+        margin-top: 12px;
+        margin-left: -8px;
+    }
+    .mian ul li:hover .sub-menu ul{
+        display: block;
+        margin: 6px;
+    }
+    .main ul li:hover .sub-menu ul li {
+        width: 75px;
+        padding: 5px;
+        border-bottom: 1px #fff;
+        background: transparent;
+        transition: 0.4 ease;
+        text-align: left;
+        border-radius: 0px;
+    }
+</style>
+<body>
+    <header>
+        <div class="main">
+            <dir class="logo">
+                <img style="width: 150px; height: 150px;" src="img/LOGOf.jpg" alt="">
+            </dir>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Dessert</a></li>
+                <li><a href="#">Appetizer</a></li>
+                <li><a href="#">Paste</a></li>
+                <li><a href="#">Salad</a></li>
+                <li><a href="#">Burger</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">More Recipes</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Cookies</a>
+
+                            </li>
+                                <li><a href="#">Sandwich</a> </li>
+                        </ul>
+                    </div>
+            </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>HOMIE RECIPES</h1>
+        </div>
+        <div class="button">
+            <a href="#" class="btn">WATCH VIDEOS</a>
+            <a href="#" class="btn">BASIC SKILLS</a>
+            <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </header>
+</body>
+</html>
