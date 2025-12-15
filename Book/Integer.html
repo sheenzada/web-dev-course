@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of First 10 Integers</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function calculateSum() {
+        let sum = 0;
+        let numbers  =[];
+
+        for (let i = 1 ; i<=10; i++){
+            sum+= i ;
+            numbers.push(i);
+        }
+        document.getElementById("sumDisplay").textContent = "The Sum of the first 10 integers is : " + sum;
+
+        let output = "The first 10 integers are : [";
+        for (let i = 0 ; i < numbers.length; i++){
+            output += numbers[i];
+            if ( i  < numbers.length - 1){
+                let output = "complete"
+            }
+        }
+    }
+</script>
+</html>
