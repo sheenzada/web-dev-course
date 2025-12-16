@@ -25,17 +25,48 @@
 // for (ler i=1; i<=N; i++){
 
 // }
-let a =10;
-for(let i = 0; i<10; i++){
-    row="";
-    if(i%2==0){
-        r=""
-        console.log("*");
+// let a =5;
+// for(let i = 0; i<5; i++){
+//     row="";
+//     if(i%2==0){
+//         r="*"
+//         console.log("*");
         
-    }
-    console.log(r);
+//     }
+//     console.log(r);
     
-}
+// }
 
-let ab=10;
-for(i=0; i<10;)
+// let ab=10;
+// for(i=0; i<10;){
+    
+// }
+
+// let a=5;
+// for(let i = 0 ; i < 5; i++){
+//     row="";
+//     if(i%2==0){
+//         r="";
+//         console.log("*");
+        
+//     }
+//     console.log("*");
+//     for(let j = 0; j >5 ; j--){
+//         row="2";
+//         console.log("*");
+        
+//     }
+//     console.log("*");
+    
+    
+// }
+
+for(let i =0 ;  i < 50; i++){
+    if(i%3 && i%5 == 0)
+        console.log(i);
+        // for(let j= 0 ; j <50 ; j++ ){
+        //     if(j%5==0)
+        //     console.log(j);
+            
+        // }
+}
