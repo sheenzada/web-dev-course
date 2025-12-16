@@ -61,8 +61,73 @@
     
 // }
 
-for(let i =1 ;  i < 50; i++){
-    if(i%3==0 && i%5 == 0)
-        console.log(i);
+// for(let i =0 ;  i < 50; i++){
+//     if(i%3==0 && i%5 == 0)
+//         console.log(i);
         
-}
+// }
+// num = int(input("7: "))
+
+// if num <= 7:
+//     print("Not a prime number")
+// else:
+//     is_prime = True
+//     for i in range(2, num):
+//         if num % i == 0:
+//             is_prime = False
+//             break
+
+//     if is_prime:
+//         print("Prime number")
+//     else:
+// //         print("Not a prime number")
+// let num = parseInt(prompt("Enter a number:"));
+
+// let isPrime = true;
+
+// if (num <= 1) {
+//     isPrime = false;
+// } else {
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
+
+// if (isPrime) {
+//     document.write("Prime number");
+// } else {
+//     document.write("Not a prime number");
+// }
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Enter a number: ", function(num) {
+    num = parseInt(num);
+    let isPrime = true;
+
+    if (num <= 1) {
+        isPrime = false;
+    } else {
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+
+    if (isPrime) {
+        console.log("Prime number");
+    } else {
+        console.log("Not a prime number");
+    }
+
+    rl.close();
+});
