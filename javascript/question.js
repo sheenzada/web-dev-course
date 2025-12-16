@@ -101,33 +101,50 @@
 // } else {
 //     document.write("Not a prime number");
 // }
-const readline = require("readline");
+// const readline = require("readline");
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-rl.question("Enter a number: ", function(num) {
-    num = parseInt(num);
-    let isPrime = true;
+// rl.question("Enter a number: ", function(num) {
+//     num = parseInt(num);
+//     let isPrime = true;
+// Question 3
+    // if (num <= 1) {
+    //     isPrime = false;
+    // } else {
+    //     for (let i = 2; i < num; i++) {
+    //         if (num % i === 0) {
+    //             isPrime = false;
+    //             break;
+    //         }
+    //     }
+    // }
 
-    if (num <= 1) {
-        isPrime = false;
-    } else {
-        for (let i = 2; i < num; i++) {
-            if (num % i === 0) {
-                isPrime = false;
-                break;
-            }
-        }
-    }
+    // if (isPrime) {
+    //     console.log("Prime number");
+    // } else {
+    //     console.log("Not a prime number");
+    // }
 
-    if (isPrime) {
-        console.log("Prime number");
-    } else {
-        console.log("Not a prime number");
-    }
+    // rl.close();
+// Question 4
 
-    rl.close();
-});
+const prompt = require("prompt-sync")();
+
+let n = parseInt(prompt("Enter a number: "));
+let i = 1;
+let factorial = 1;
+
+if (n < 0) {
+    console.log("Factorial of a negative number does not exist.");
+} else {
+    do {
+        factorial *= i;
+        i++;
+    } while (i <= n);
+
+    console.log(`Factorial of ${n} is ${factorial}`);
+}
