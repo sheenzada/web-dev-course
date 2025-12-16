@@ -61,12 +61,8 @@
     
 // }
 
-for(let i =0 ;  i < 50; i++){
-    if(i%3 && i%5 == 0)
+for(let i =1 ;  i < 50; i++){
+    if(i%3==0 && i%5 == 0)
         console.log(i);
-        // for(let j= 0 ; j <50 ; j++ ){
-        //     if(j%5==0)
-        //     console.log(j);
-            
-        // }
+        
 }
