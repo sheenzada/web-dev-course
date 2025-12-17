@@ -1,0 +1,28 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: lightblue;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: lightyellow;
+}
+
+#footnote {
+    font-size: 12px;
+    animation:  highlight 2s ease-in-out alternate infinite;
+}
+
+@keyframes highlight {
+    from { background-color: transparent;}
+    to {background-color: yellow;}
+}
