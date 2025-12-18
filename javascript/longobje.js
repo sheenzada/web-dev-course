@@ -27,7 +27,7 @@ const student = {
   languages: ["Urdu", "Shina", "Balti"],
   Year: 2025,
   favoriteSubjects: ["Computer Science", "Mathematics"],
-  guardian: {
+  FName: {
     father: "Muhammad. Ejaz",
   }
 };
@@ -37,6 +37,6 @@ console.log("Roll No:", student.rollNo);
 console.log("Marks in Computer Science:", student.marks.computerScience);
 console.log("City:", student.address.city);
 console.log("Hobbies:", student.hobbies); //.join(", ")
-console.log("Guardian:", student.guardian.father);
+console.log("Father Name:", student.FName.father);
 console.log("Languages:", student.languages);
 // .join(", ")
