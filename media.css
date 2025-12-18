@@ -1,0 +1,1158 @@
+@media screen and (max-width:1085px) {
+    .ecourse h1{
+        font-size: 25px;
+    }
+    .ecourse h3{
+        font-size: 15px;
+    }
+    .ecourse{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:816px) {
+    .ecourse h1{
+        font-size: 20px;
+    }
+    .ecourse h3{
+        font-size: 13px;
+    }
+    .ecourse{
+        height: 12vh;
+    }
+}
+@media screen and (max-width:804px) {
+    .ecourse{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:668px) {
+    .ecourse h1{
+        font-size: 15px;
+    }
+    .ecourse h3{
+        font-size: 10px;
+    }
+    .ecourse{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:534px) {
+    .ecourse h1{
+        font-size: 10px;
+    }
+    .ecourse h3{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:426px) {
+    .ecourse h1{
+        font-size: 11px;
+    }
+    .ecourse h3{
+        font-size: 7px;
+    }
+    .ecourse{
+        height: 8vh;
+    }
+}
+@media screen and (max-width:382px) {
+    .ecourse h1{
+        font-size: 9px;
+    }
+    .ecourse h3{
+        font-size: 6px;
+    }
+    .ecourse{
+        height: 8vh;
+    }
+}
+@media screen and (max-width:316px) {
+    .ecourse h1{
+        font-size: 7px;
+    }
+    .ecourse h3{
+        font-size: 5px;
+    }
+    .ecourse{
+        height: 6vh;
+    }
+}
+@media screen and (max-width:1085px) {
+    .sub{
+        height: 60px;
+    }
+    .sub h1{
+        font-size: 25px;
+    }
+    .subject{
+        height: 12vh;
+    }
+}
+@media screen and (max-width:816px) {
+    .sub{
+        height: 50px;
+        width: 150px;
+        margin-left: 10px;
+    }
+    .sub h1{
+        font-size: 20px;
+    }
+    .subject{
+        height: 12vh;
+    }
+}
+@media screen and (max-width:668px) {
+    .sub{
+        height: 40px;
+        width: 100px;
+        margin-left: 10px;
+    }
+    .sub h1{
+        font-size: 15px;
+    }
+    .subject{
+        height: 12vh;
+    }
+}
+@media screen and (max-width:534px) {
+    .sub{
+        height: 30px;
+        width: 80px;
+        margin-left: 10px;
+    }
+    .sub h1{
+        font-size: 12px;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:866px) {
+    .sub{
+        height: 40px;
+        width: 100px;
+        margin-left: 10px;
+    }
+    .sub h1{
+        font-size: 15px;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:535px) {
+    .sub{
+        height: 30px;
+        width: 90px;
+        margin-left: 10px;
+    }
+    .sub h1{
+        font-size: 12px;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:426px) {
+    .sub{
+        height: 25px;
+        width: 80px;
+        margin-left: 5px;
+    }
+    .sub h1{
+        font-size: 10px;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:382px) {
+    .sub{
+        height: 20px;
+        width: 70px;
+        margin-left: 5px;
+    }
+    .sub h1{
+        font-size: 9px;
+    }
+    .subject{
+        height: 8vh;
+    }
+}
+@media screen and (max-width:1398px) {
+    .subject{
+        height: 13vh;
+    }
+}
+@media screen and (max-width:1013px) {
+    .subject a{
+        font-size: 28px;
+    }
+    .subject button{
+        font-size: 28px;
+        height: 45px;
+    }
+}
+@media screen and (max-width:947px) {
+    .subject a{
+        font-size: 23px;
+    }
+    .subject button{
+        font-size: 25px;
+        height: 35px;
+        width: 110px;
+    }
+    .sub{
+        width: 140px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    /* .sub h1{
+        width: 150px;
+        font-size: 20px;
+    } */
+}
+@media screen and (max-width:754px) {
+    .subject a{
+        font-size: 20px;
+    }
+    .subject button{
+        font-size: 25px;
+        height: 32px;
+        width: 100px;
+    }
+    .sub{
+        width: 130px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    /* .sub h1{
+        font-size: 15px;
+    } */
+}
+@media screen and (max-width:676px) {
+    .subject a{
+        font-size: 18px;
+    }
+    .subject button{
+        font-size: 23px;
+        height: 30px;
+        width: 90px;
+    }
+    .sub{
+        width: 120px;
+        height: 40px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    /* .sub h1{
+        text-align: center;
+        font-size: 16px;
+    } */
+    .subject{
+        height: 12vh;
+    }
+}
+@media screen and (max-width:603px) {
+    .subject a{
+        font-size: 16px;
+    }
+    .subject button{
+        font-size: 21px;
+        height: 28px;
+        width: 85px;
+    }
+    .sub{
+        width: 110px;
+        height: 35px;
+        margin-left: 5px;
+        text-align: center;
+    }
+   
+    .subject{
+        height: 12vh;
+    }
+}
+@media screen and (max-width:549px) {
+    .subject a{
+        font-size: 14px;
+    }
+    .subject button{
+        font-size: 16px;
+        height: 20px;
+        width: 70px;
+    }
+    .sub{
+        width: 100px;
+        height: 35px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:483px) {
+    .subject a{
+        font-size: 12px;
+    }
+    .subject button{
+        font-size: 14px;
+        height: 18px;
+        width: 60px;
+    }
+    .sub{
+        width: 90px;
+        height: 35px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:426px) {
+    .subject a{
+        font-size: 10px;
+    }
+    .subject button{
+        font-size: 12px;
+        height: 16px;
+        width: 55px;
+    }
+    .sub{
+        width: 80px;
+        height: 35px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:373px) {
+    .subject a{
+        font-size: 10px;
+    }
+    .subject button{
+        font-size: 10px;
+        height: 14px;
+        width: 50px;
+    }
+    .sub{
+        width: 75px;
+        height: 32px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:313px) {
+    .subject a{
+        font-size: 8px;
+    }
+    .subject button{
+        font-size: 9px;
+        height: 12px;
+        width: 45px;
+    }
+    .sub{
+        width: 55px;
+        height: 25px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .subject{
+        height: 10vh;
+    }
+}
+@media screen and (max-width:1200px) {
+    .img{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:1014px) {
+    .img{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:873px) {
+    .img h2{
+        margin-left: 100px;
+    }
+    .img h1{
+        margin-left: 100px;
+    }
+    .img button{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:705px) {
+    .img h2{
+        margin-left: 70px;
+        font-size: 30px;
+    }
+    .img h1{
+        margin-left: 70px;
+        font-size: 50px;
+    }
+    .img button{
+        margin-left: 70px;
+    }
+    .img button{
+        width: 100px;
+        height: 30px;
+        font-size: 13px;
+        margin-top: -30px;
+    }
+    .img{
+        height: 75vh;
+    }
+}
+@media screen and (max-width:551px) {
+    .img h2{
+        margin-left: 70px;
+        font-size: 25px;
+    }
+    .img h1{
+        margin-left: 70px;
+        font-size: 40px;
+    }
+    .img button{
+        margin-left: 70px;
+    }
+    .img{
+        height: 75vh;
+    }
+}
+@media screen and (max-width:466px) {
+    .img h2{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .img h1{
+        margin-left: 40px;
+        font-size: 30px;
+    }
+    .img button{
+        margin-left: 40px;
+    }
+    .img{
+        height: 75vh;
+    }
+}
+@media screen and (max-width:345px) {
+    .img h2{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .img h1{
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .img button{
+        margin-left: 10px;
+    }
+    .img{
+        height: 75vh;
+    }
+}
+@media screen and (max-width:999px) {
+   .about h3{
+    font-size: 20px;
+   }
+}
+@media screen and (max-width:792px) {
+   .image{
+    height: 70vh;
+   }
+   .about{
+    height: 70vh;
+   }
+   .about h2{
+    font-size: 20px;
+   }
+   .about h1{
+    font-size: 30px;
+   }
+   .about h3{
+    font-size: 15px;
+   }
+   .abo{
+    height: 80vh;
+   }
+   .about button{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+   }
+}
+@media screen and (max-width:670px) {
+   .image{
+    height: 70vh;
+   }
+   
+   .about{
+    height: 60vh;
+   }
+   .about h2{
+    font-size: 15px;
+   }
+   .about h1{
+    font-size: 25px;
+   }
+   .about h3{
+    font-size: 12px;
+   }
+   .abo{
+    height: 80vh;
+   }
+}
+
+@media screen and (max-width:520px) {
+   .image{
+    height: 60vh;
+    
+   }
+   .about{
+    height: 60vh;
+   }
+   .about h2{
+    font-size: 13px;
+   }
+   .about h1{
+    font-size: 20px;
+   }
+   .about h3{
+    font-size: 13px;
+   }
+   .abo{
+    height: 80vh;
+   }
+}
+@media screen and (max-width:464px) {
+  .about button{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:453px) {
+  .about h2{
+    font-size: 13px;
+  }
+  .about h1{
+    font-size: 15px;
+  }
+  .about h3{
+    font-size: 10px;
+  }
+  .about button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .abo{
+    height: 70vh;
+  }
+}
+@media screen and (max-width:593px) {
+  .about h2{
+    font-size: 13px;
+  }
+  .about h1{
+    font-size: 15px;
+  }
+  .about h3{
+    font-size: 15px;
+  }
+  .about button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .abo{
+    height: 70vh;
+  }
+}
+@media screen and (max-width:755px) {
+  .about h2{
+    font-size: 13px;
+  }
+  .about h1{
+    font-size: 15px;
+  }
+  .about h3{
+    font-size: 15px;
+  }
+  .about button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .abo{
+    height: 70vh;
+  }
+}
+@media screen and (max-width:505px) {
+  .about h2{
+    font-size: 13px;
+  }
+  .about h1{
+    font-size: 15px;
+  }
+  .about h3{
+    font-size: 12px;
+  }
+  .about button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .abo{
+    height: 70vh;
+  }
+}
+@media screen and (max-width:377px) {
+  .about h2{
+    font-size: 13px;
+  }
+  .about h1{
+    font-size: 15px;
+  }
+  .about h3{
+    font-size: 10px;
+  }
+  .about button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .abo{
+    height: 70vh;
+  }
+}
+@media screen and (max-width:299px) {
+  .about h2{
+    font-size: 10px;
+  }
+  .about h1{
+    font-size: 13px;
+  }
+  .about h3{
+    font-size: 9px;
+  }
+  .about button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .abo{
+    height: 70vh;
+  }
+}
+@media screen and (max-width:1003px) {
+    .box1{
+        width: 200px;
+        height: 150px;
+    }
+    .box1 img{
+        width: 200px;
+        height: 150px;
+    }
+    .bo img{
+        width: 200px;
+        height: 150px;
+    }
+    .bo{
+        width: 200px;
+        height: 150px;
+    }
+    .box{
+        height: 180px;
+    }
+    .boxs{
+        height: 180px;
+    }
+}
+@media screen and (max-width:892px) {
+    .box1{
+        width: 150px;
+        height: 100px;
+    }
+    .box1 img{
+        height: 100px;
+        width: 150px;
+    }
+
+        .bo{
+        width: 150px;
+        height: 100px;
+    }
+    .bo img{
+        height: 100px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:895px) {
+    .box1{
+        width: 150px;
+        height: 100px;
+    }
+    .box{
+        height: 140px;
+    }
+    .boxs{
+        height: 140px;
+    }
+    .box1 img{
+        height: 100px;
+        width: 150px;
+    }
+
+        .bo{
+        width: 150px;
+        height: 100px;
+    }
+    .bo img{
+        height: 100px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:709px) {
+    .box1{
+        width: 100px;
+        height: 80px;
+    }
+    .box{
+        height: 100px;
+    }
+    .boxs{
+        height: 100px;
+    }
+    .box1 img{
+        height: 80px;
+        width: 100px;
+    }
+    .bo{
+        width: 100px;
+        height: 80px;
+    }
+    .bo img{
+        width: 100px;
+        height: 80px;
+    }
+}
+@media screen and (max-width:499px) {
+    .box1{
+        width: 50px;
+        height: 40px;
+    }
+    .box{
+        height: 50px;
+    }
+    .boxs{
+        height: 70px;
+    }
+    .box1 img{
+        height: 40px;
+        width: 50px;
+    }
+    .bo{
+        width: 50px;
+        height: 40px;
+    }
+    .bo img{
+        width: 50px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:502px) {
+    .subjec h1{
+        font-size: 20px;
+    }
+    .subjec h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1185px) {
+    .need{
+        width: 500px;
+        height: 600px;   
+    }
+    .need h2{
+        font-size: 25px;
+    }
+    .need h1{
+        font-size: 30px;
+    }
+    .need h3{
+        font-size: 20px;
+    }
+    .book{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:1058px) {
+    .need{
+        width: 450px;
+        height: 600px;   
+        margin-left: 10px;
+    }
+    .need h2{
+        font-size: 25px;
+        margin-left: 25px;
+    }
+    .need h1{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .need h3{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .book{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:1005px) {
+    .sign{
+        width: 450px;
+        height: 600px;
+    }
+    .sign h1{
+        width: 450px;
+    }
+    .sign input{
+    font-size: 30px;
+    }
+    .sign select{
+        width: 370px;
+    }
+    .sign button{
+        width: 170px;
+        font-size: 27px;
+        margin-left: 130px;
+    }
+}
+@media screen and (max-width:958px) {
+    .sign{
+        width: 420px;
+        height: 600px;
+    }
+    .sign h1{
+        width: 420px;
+    }
+    .sign input{
+    font-size: 30px;
+    }
+    .sign select{
+        width: 370px;
+    }
+    .sign button{
+        width: 170px;
+        font-size: 27px;
+        margin-left: 130px;
+    }
+}
+@media screen and (max-width:811px) {
+    .sign{
+        width: 300px;
+        height: 400px;
+    }
+    .sign h1{
+        width: 300px;
+        height: 40px;
+        font-size: 30px;
+        /* background-color: red; */
+    }
+    .sign input{
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 0px;
+    }
+    .sign select{
+        width: 250px;
+        border-radius: 0px;
+        height: 30px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .sign button{
+        width: 130px;
+        height: 30px;
+        margin-top: 20px;
+        font-size: 25px;
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width:811px) {
+    .need{
+        height: 400px;
+        width: 350px;
+    }
+    .need h2{
+        font-size: 20px;
+    }
+    .need h1{
+        font-size: 25px;
+    }
+    .need h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:699px) {
+    .need{
+        height: 320px;
+        width: 300px;
+    }
+    .need h2{
+        font-size: 15px;
+    }
+    .need h1{
+        font-size: 20px;
+    }
+    .need h3{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:699px) {
+    .sign{
+        width: 250px;
+        height: 320px;
+    }
+    .sign h1{
+        width: 250px;
+        height: 40px;
+        font-size: 30px;
+        /* background-color: red; */
+    }
+    .sign input{
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 0px;
+    }
+    .sign select{
+        width: 200px;
+        border-radius: 0px;
+        height: 20px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .sign button{
+        width: 120px;
+        height: 25px;
+        margin-top: 15px;
+        font-size: 20px;
+        border-radius: 0px;
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width:547px) {
+        .sign{
+        width: 200px;
+        height: 320px;
+    }
+    .sign h1{
+        width: 200px;
+        height: 40px;
+        font-size: 30px;
+        /* background-color: red; */
+    }
+    .sign input{
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 0px;
+    }
+    .sign select{
+        width:170px;
+        border-radius: 0px;
+        height: 20px;
+        margin-top: 15px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .sign button{
+        width: 100px;
+        height: 22px;
+        margin-top: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:501px) {
+    .need{
+        height: 300px;
+        width: 200px;
+    }
+    .need h2{
+        font-size: 12px;
+    }
+    .need h1{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .need h3{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .sign input{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .sign button{
+        width: 100px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .sign select{
+        width: 170px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .sign{
+        height: 250px;
+    }
+    .need{
+        height:250px;
+    }
+}
+@media screen and (max-width:421px) {
+    .need{
+        height: 250px;
+        width: 150px;
+    }
+    .need h2{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .need h1{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .need h3{
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    .sign input{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .sign button{
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    .sign select{
+        width: 125px;
+        height: 15px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .sign h1{
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .sign{
+        height: 250px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:349px) {
+    .need{
+        height: 200px;
+        width: 130px;
+    }
+    .need h2{
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    .need h1{
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    .need h3{
+        font-size: 7px;
+        margin-left: 10px;
+    }
+    .sign input{
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    .sign button{
+        width: 60px;
+        height: 17px;
+        border-radius: 0px;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .sign select{
+        width: 100px;
+        height: 15px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .sign h1{
+        width: 130px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .sign{
+        height: 200px;
+        width: 130px;
+    }
+}
+@media screen and (max-width:311px) {
+    .need{
+        height: 200px;
+        width: 130px;
+    }
+    .need h2{
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    .need h1{
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    .need h3{
+        font-size: 7px;
+        margin-left: 10px;
+    }
+    .sign input{
+        font-size: 6px;
+        margin-top: 10px;
+    }
+    .sign button{
+        width: 50px;
+        height: 15px;
+        color: white;
+        border-radius: 0px;
+        font-size: 8px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .sign select{
+        width: 80px;
+        height: 15px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .sign h1{
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .sign{
+        height: 200px;
+        width: 100px;
+}
+}
