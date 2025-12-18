@@ -75,7 +75,7 @@
 .homescreen{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/carousel-1.jpg);
+    background-image: url(img/carousel-1.jpg);
     background-size: 100% 100vh;
 
     display: flex;

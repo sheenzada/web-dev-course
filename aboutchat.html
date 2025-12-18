@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecourse | About</title>
+
+<style>
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+}
+img{max-width:100%; display:block;}
+a{text-decoration:none}
+
+/* ================= COLORS ================= */
+:root{
+    --primary:#ff3b3b;
+    --secondary:#1f2a7a;
+    --dark:#222;
+    --light:#f8f9fc;
+}
+
+/* ================= HEADER ================= */
+header{
+    background:#fff;
+    padding:25px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+.top{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.logo{
+    font-size:44px;
+    font-weight:700;
+}
+.logo span{color:orange}
+
+.info{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.info div h4{color:var(--primary)}
+.info div p{color:#555;font-size:14px}
+
+/* ================= NAV ================= */
+nav{
+    background:var(--secondary);
+}
+.menu{
+    max-width:1200px;
+    margin:auto;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+.menu a{
+    color:white;
+    font-size:17px;
+    position:relative;
+}
+.menu a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:var(--primary);
+    left:0;
+    bottom:-5px;
+    transition:.3s;
+}
+.menu a:hover::after{width:100%}
+
+.join{
+    background:var(--primary);
+    padding:8px 20px;
+    border-radius:30px;
+}
+
+/* ================= HERO ================= */
+.hero{
+    position:relative;
+    height:420px;
+}
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.hero::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.2));
+}
+.hero-text{
+    position:absolute;
+    inset:0;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+.hero-text h1{font-size:50px}
+.hero-text p{font-size:18px}
+
+/* ================= ABOUT ================= */
+.about{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+.about img{
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+.about h2{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+.about h1{
+    font-size:36px;
+    margin-bottom:15px;
+}
+.about p{
+    background:var(--secondary);
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    line-height:1.7;
+}
+.learn{
+    margin-top:25px;
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    transition:.3s;
+}
+.learn:hover{
+    background:#ff0000;
+    transform:translateY(-3px);
+}
+
+/* ================= SIGNUP ================= */
+.signup{
+    background:url("img/course-3.jpg") center/cover no-repeat;
+    padding:80px 20px;
+    position:relative;
+}
+.signup::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(31,42,122,.85);
+}
+.signup-content{
+    position:relative;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    color:white;
+}
+.offer h2{color:var(--primary)}
+.offer h1{margin:10px 0 15px}
+
+.form{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+}
+.form h3{
+    text-align:center;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+.form input,
+.form select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+.form button{
+    width:100%;
+    padding:14px;
+    background:var(--primary);
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+.form button:hover{
+    background:#ff0000;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#0f1333;
+    color:white;
+    padding:60px 20px;
+}
+.footer{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+footer h3{color:var(--primary)}
+.news input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:8px;
+    border:none;
+}
+.news button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:var(--primary);
+    border:none;
+    color:white;
+    border-radius:8px;
+}
+
+.copy{
+    background:#090b1f;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+    .about,
+    .signup-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .hero-text h1{font-size:38px}
+}
+
+@media(max-width:600px){
+    .logo{font-size:32px}
+    .menu a{font-size:15px}
+    .footer{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="top">
+        <div class="logo">E<span>course</span></div>
+        <div class="info">
+            <div>
+                <h4>Our Office</h4>
+                <p>Next Planner Academy (SKD)</p>
+            </div>
+            <div>
+                <h4>Email Us</h4>
+                <p>sheenzada7@gmail.com</p>
+            </div>
+            <div>
+                <h4>Call Us</h4>
+                <p>03498405661</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Developers</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a class="join" href="#">Join Us</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <img src="img/course-3.jpg">
+    <div class="hero-text">
+        <h1>ABOUT</h1>
+        <p>Home / About</p>
+    </div>
+</section>
+
+<section class="about">
+    <img src="img/about.jpg">
+    <div>
+        <h2>ABOUT US</h2>
+        <h1>Innovative Way To Learn</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi dicta accusantium praesentium veritatis suscipit assumenda.
+        </p>
+        <a href="#" class="learn">Learn More</a>
+    </div>
+</section>
+
+<section class="signup">
+    <div class="signup-content">
+        <div class="offer">
+            <h2>Need Any Courses</h2>
+            <h1>30% Off For New Students</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore expedita inventore natus iste eligendi.
+            </p>
+        </div>
+
+        <div class="form">
+            <h3>Sign Up Now</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="number" placeholder="Phone Number">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <select>
+                <option>Java</option>
+                <option>C++</option>
+                <option>CSS</option>
+                <option>Graphics</option>
+                <option>Freelancing</option>
+            </select>
+            <button>Submit</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <div>
+            <h3>GET IN TOUCH</h3>
+            <p>New York, USA</p>
+            <p>+92 349 8405661</p>
+            <p>sheenzada7@gmail.com</p>
+        </div>
+
+        <div>
+            <h3>OUR COURSES</h3>
+            <p>Web Design</p>
+            <p>App Design</p>
+            <p>SEO</p>
+            <p>Marketing</p>
+        </div>
+
+        <div class="news">
+            <h3>NEWSLETTER</h3>
+            <input type="text" placeholder="Enter Email">
+            <button>Sign Up</button>
+        </div>
+    </div>
+</footer>
+
+<div class="copy">
+    © Domain Name. All Rights Reserved. Designed by Inam Ullah
+</div>
+
+</body>
+</html>
