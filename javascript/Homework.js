@@ -81,6 +81,8 @@
 
 // console.log(arr); 
 
+
+// Question .......
 // let numbers = [10, 20, 30, 40];
 // let sum = numbers.reduce((acc, num) => acc + num, 0);
 // let average = sum / numbers.length;
@@ -91,11 +93,10 @@
 // console.log("Count greater than average:", count);
 
 
-let numbers = [3, 6, 9, 12, 15, 18];
+// Question ..........
+// let numbers = [3, 6, 9, 12, 15, 18];
+// let evenSum = numbers
+//   .filter(num => num % 2 === 0)
+//   .reduce((sum, num) => sum + num, 0);
 
-// Sum of even numbers
-let evenSum = numbers
-  .filter(num => num % 2 === 0)
-  .reduce((sum, num) => sum + num, 0);
-
-console.log("Sum of even numbers:", evenSum);
+// console.log("Sum of even numbers:", evenSum);
