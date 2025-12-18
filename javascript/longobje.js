@@ -21,10 +21,10 @@ const student = {
   hobbies: ["reading", "coding", "painting", "volleyball"],
   contact: {
     email: "sheenzada7@gmail.com",
-    phone: "03498405661"
+    phone: "03498405661",
   },
   attendance: 92, 
-  languagesKnown: ["Urdu", "Shina", "Balti"],
+  languages: ["Urdu", "Shina", "Balti"],
   Year: 2025,
   favoriteSubjects: ["Computer Science", "Mathematics"],
   guardian: {
@@ -33,8 +33,10 @@ const student = {
 };
 
 console.log("Student Name:", student.name);
+console.log("Roll No:", student.rollNo);
 console.log("Marks in Computer Science:", student.marks.computerScience);
 console.log("City:", student.address.city);
-console.log("Hobbies:", student.hobbies.join(", "));
-console.log("Guardian:", student.guardian.father, "&", student.guardian.mother);
-console.log("Languages Known:", student.languagesKnown.join(", "));
+console.log("Hobbies:", student.hobbies); //.join(", ")
+console.log("Guardian:", student.guardian.father);
+console.log("Languages:", student.languages);
+// .join(", ")
