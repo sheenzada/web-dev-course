@@ -114,6 +114,7 @@
         height: 12vh;
     }
 }
+
 @media screen and (max-width:534px) {
     .sub{
         height: 30px;
@@ -229,6 +230,16 @@
     /* .sub h1{
         font-size: 15px;
     } */
+}
+@media screen and (max-width:992px){
+    .subject a{
+        font-size: 25px;
+    }    
+}
+@media screen and (max-width:811px){
+    .subject a{
+        font-size: 20px;
+    }    
 }
 @media screen and (max-width:676px) {
     .subject a{
@@ -464,6 +475,17 @@
     font-size: 20px;
    }
 }
+@media screen and (max-width:811px){
+    .about h1{
+        font-size: 25px;
+    }    
+}
+@media screen and (max-width:811px){
+    .about h3{
+        font-size: 18px;
+    }    
+}
+
 @media screen and (max-width:792px) {
    .image{
     height: 70vh;
@@ -488,6 +510,12 @@
     height: 40px;
     font-size: 20px;
    }
+}
+@media screen and (max-width:992px){
+    .image {
+        height: 590px;
+        width: 550px;
+    }    
 }
 @media screen and (max-width:670px) {
    .image{
@@ -615,6 +643,11 @@
     height: 70vh;
   }
 }
+@media screen and (max-width:1248px){
+    .image{
+        height: 650px;
+    }    
+}
 @media screen and (max-width:377px) {
   .about h2{
     font-size: 13px;
@@ -653,6 +686,7 @@
     height: 70vh;
   }
 }
+
 @media screen and (max-width:1003px) {
     .box1{
         width: 200px;
@@ -857,6 +891,14 @@
         margin-left: 130px;
     }
 }
+@media screen and (max-width:992px){
+    .sign {
+        height: 500px;
+    } 
+    .sign input{
+        margin-top: 17px;
+    }   
+}
 @media screen and (max-width:811px) {
     .sign{
         width: 300px;
@@ -916,6 +958,22 @@
     }
     .need h3{
         font-size: 12px;
+    }
+}
+@media screen and (max-width:1248px){
+    .book {
+        margin-top: 50px;
+    }  
+}
+@media screen and (max-width:1248px){
+    .need h2{
+        font-size: 40px;
+    }    
+    .need h1{
+        font-size: 45px;
+    }
+    .need h3{
+        font-size: 27px;
     }
 }
 @media screen and (max-width:699px) {

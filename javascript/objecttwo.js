@@ -12,7 +12,7 @@ console.log(obj.role);
 
 let {Name,...res} = obj
 console.log(`Object name is : ${Name}`);
-console.log(role[0]);
+// console.log(role[0]);
 
 // let [Admin,User,Manager] = role
 // console.log(Admin);
