@@ -1,0 +1,68 @@
+/* Basic Reset and Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for screens larger than 768px (tablets and desktops) */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
