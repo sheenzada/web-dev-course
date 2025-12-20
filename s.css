@@ -1,0 +1,24 @@
+/* Enable Smooth Scrolling */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Responsive Grid/Flex Layouts */
+.navbar { 
+    display: flex; justify-content: space-between; 
+    position: sticky; top: 0; background: #fff; padding: 1rem 5%;
+}
+
+/* Fluid Typography */
+h1 { font-size: clamp(2rem, 8vw, 5rem); } 
+
+/* Long Scrolling Sections */
+section { 
+    min-height: 100vh; 
+    display: flex; justify-content: center; align-items: center; 
+}
+
+/* Mobile-First Adjustments */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Hide for mobile menu toggle */
+    .nav-links.active { display: flex; flex-direction: column; width: 100%; }
+}
