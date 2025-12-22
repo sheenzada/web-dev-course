@@ -470,6 +470,11 @@
         height: 75vh;
     }
 }
+@media screen and (max-width:1248px){
+    .abo {
+        height: 60vh;
+    }    
+}
 @media screen and (max-width:999px) {
    .about h3{
     font-size: 20px;
@@ -811,6 +816,7 @@
         font-size: 20px;
     }
 }
+
 @media screen and (max-width:1185px) {
     .need{
         width: 500px;
@@ -960,10 +966,20 @@
         font-size: 12px;
     }
 }
+
 @media screen and (max-width:1248px){
     .book {
         margin-top: 50px;
+        height: 70vh;
     }  
+}
+@media screen and (max-width:1185px){
+    .need h2{
+        width: 405px;        
+    }    
+    .need h1{
+        width: 518px;
+    }
 }
 @media screen and (max-width:1248px){
     .need h2{
@@ -975,6 +991,12 @@
     .need h3{
         font-size: 27px;
     }
+}
+@media screen and (max-width:1185px){
+    .sign{
+        margin-left: 120px;
+        height: 630px;
+    }    
 }
 @media screen and (max-width:699px) {
     .sign{
