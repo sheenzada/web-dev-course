@@ -1,0 +1,228 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ================= TOP INFO ================= */
+.ecourse {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ecourse h1 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* ================= NAVBAR ================= */
+.subject {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #222;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.subject .sub h1 {
+    color: #00c3ff;
+}
+
+.subject a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+.subject button {
+    padding: 8px 15px;
+    background: #00c3ff;
+    border: none;
+    color: black;
+    border-radius: 5px;
+}
+
+/* ================= HERO ================= */
+.img {
+    background: #ddd;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.img h1 {
+    font-size: 40px;
+}
+
+.img h2 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.img button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+/* ================= ABOUT ================= */
+.abo {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex: 1;
+    min-height: 300px;
+    background: #ccc;
+}
+
+.about {
+    flex: 1;
+}
+
+.about h2 {
+    color: #00c3ff;
+}
+
+/* ================= SUBJECT TITLES ================= */
+.subjec {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ================= SUBJECT BOXES ================= */
+.box,
+.boxs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.box1,
+.bo {
+    width: 250px;
+}
+
+/* ================= SIGNUP ================= */
+.book {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    background: #f5f5f5;
+    flex-wrap: wrap;
+}
+
+.need,
+.sign {
+    flex: 1;
+}
+
+.sign input,
+.sign select,
+.sign button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+
+    .img h1 {
+        font-size: 30px;
+    }
+
+    .abo {
+        padding: 30px;
+    }
+
+    .book {
+        padding: 30px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .ecourse {
+        flex-direction: column;
+    }
+
+    .subject {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subject a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .img {
+        padding: 60px 20px;
+    }
+
+    .img h1 {
+        font-size: 24px;
+    }
+
+    .abo {
+        flex-direction: column;
+    }
+
+    .book {
+        flex-direction: column;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+    .img h1 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
