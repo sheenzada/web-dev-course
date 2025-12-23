@@ -63,6 +63,8 @@
     .hero {
       height: 90vh;
       background: linear-gradient(to right, #4facfe, #00f2fe);
+      background-image: url(img/carousel-1.jpg);
+      background-repeat: no-repeat;
       color: #fff;
       display: flex;
       align-items: center;
@@ -188,6 +190,11 @@
       .hero h1 {
         font-size: 36px;
       }
+    }
+    @media screen and (max-width:1300px){
+        .hero {
+          height: 65vh;
+        }
     }
   </style>
 </head>
