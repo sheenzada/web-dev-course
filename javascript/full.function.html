@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Filter Reduce Functions in JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Array Methods: map(), filter(), and reduce()</h1>
+    <p>Open your browser's console (F12, then select the "Console" tab) to see the output of the JavaScript code.</p>
+
+    <script>
+        // 1. Initial Data: Array of objects representing people with names and ages.
+        const people = [
+            { name: 'John', age: 32 },
+            { name: 'Robert', age: 65 },
+            { name: 'Jean Claude', age: 12 }, // Not an adult
+            { name: 'Brianna', age: 23 },
+            { name: 'Norma', age: 101 }, // Not an adult by some definitions
+            { name: 'Mike', age: 17 } // Not an adult
+        ];
+
+        console.log('Original array of people:', people);
+
+        // --- FILTER ---
+        // Filter creates a new array with elements that pass a test condition.
+        // Example: Get all adults (age >= 18).
+        const adults = people.filter(person => person.age >= 18);
+        console.log('\nFiltered adults (age >= 18):', adults);
+        // Output: [{name: 'John', age: 32}, {name: 'Robert', age: 65}, {name: 'Brianna', age: 23}, {name: 'Norma', age: 101}]
+
+
+        // --- MAP ---
+        // Map creates a new array by applying a function to every element in the original array.
+        // Example: Get only the names of all people.
+        const names = people.map(person => person.name);
+        console.log('\nMapped names:', names);
+        // Output: ["John", "Robert", "Jean Claude", "Brianna", "Norma", "Mike"]
+
+        // Example: Get ages multiplied by 2.
+        const doubledAges = people.map(person => person.age * 2);
+        console.log('Mapped doubled ages:', doubledAges);
+        // Output: [64, 130, 24, 46, 202, 34]
+
+
+        // --- REDUCE ---
+        // Reduce executes a reducer function on each element of the array, resulting in a single output value.
+        // Example: Calculate the total age of all people.
+        const totalAge = people.reduce((accumulator, currentPerson) => {
+            return accumulator + currentPerson.age;
+        }, 0); // The 0 is the initial value for the accumulator.
+
+        console.log('\nReduced total age:', totalAge);
+        // Output: 250
+
+
+        // --- CHAINING MAP, FILTER, AND REDUCE ---
+        // Combine all three methods to perform complex data manipulation in one line.
+        // Example: Find the sum of ages of all adults.
+
+        const sumOfAdultAges = people
+            .filter(person => person.age >= 18) // Filter to get only adults
+            .map(adult => adult.age)           // Map to get an array of their ages
+            .reduce((acc, age) => acc + age, 0); // Reduce the ages to a single sum
+
+        console.log('\nChained methods - Sum of adult ages:', sumOfAdultAges);
+        // Output: 250 (32 + 65 + 23 + 101)
+        
+    </script>
+</body>
+</html>
