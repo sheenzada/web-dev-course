@@ -1,0 +1,256 @@
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 500vh;
+    background-color: red;
+}
+.ecourse{
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    /* background-color: green; */
+    justify-content: space-around;
+}
+.ecourse h1{
+    font-size: 35px;
+    color: #b74b4b;
+}
+.ecourse h3{
+    font-size: 20px;
+}
+.subject{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 15vh;
+    /* background-color: yellow; */
+}
+.sub{
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 20px;
+    width: 200px;
+    height: 65px;
+    background-color: rgb(245, 236, 224);
+}
+.sub h1{
+    font-size: 30px;
+}
+.subject a{
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.subject a:hover{
+    color: red;
+}
+.subject button{
+    background-color: red;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+}
+.img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/carousel-1.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+.div{
+    width: 100%;
+    height: 25vh;
+}
+.img h2{
+    color: wheat;
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 35px;
+}
+.img h1{
+    font-size: 60px;
+    margin-left: 200px;
+    color: wheat;
+}
+.img button{
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    margin-left: 200px;
+    height: 50px;
+    background-color: red;
+}
+.abo{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+}
+.image{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 40%;
+    border: none;
+    background-image: url(img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 90vh;
+    border-radius: 10px;
+    height: 90vh;
+}
+.about{
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 90vh;
+    /* background-color: blue; */
+}
+.about h2{
+    font-size: 25px;
+    color: #b74b4b;
+}
+.about h1{
+    font-size: 35px;
+}
+.about h3{
+    font-size: 25px;
+}
+.about button{
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    height: 50px;
+    background-color: red;
+}
+.subjec{
+    width: 100%;
+    height: 7vh;
+    /* background-color: yellow; */
+}
+.subjec h2{
+   color: #b74b4b;
+    text-align: center;
+}
+.subjec h1{
+    text-align: center;
+    margin-top: -5px;
+}
+ .box{
+display: flex;
+width: 100%;
+height: 230px;
+background-color: rgb(245, 234, 234);
+justify-content: space-evenly;
+ }
+.box1{
+width: 250px;
+height: 200px;
+margin-top: 20px;
+margin-left: 17px;
+border-radius: 20px;
+background-color: aqua;
+}
+.boxs{
+display: flex;
+width: 100%;
+height: 250px;
+background-color: rgb(245, 234, 234);
+justify-content: space-evenly;
+}
+.bo{
+ width: 250px;
+ height: 200px;
+ margin-top: 20px;
+ margin-left: 17px;
+ border-radius: 20px;
+ background-color: aqua;
+ }
+.book{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-image: url(loging.jpg);
+}
+.need{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+    /* background-color: green; */
+}
+.need h2{
+    color: #b74b4b;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.need h1{
+    color: white;
+    font-size: 35px;
+    margin-left: 70px;
+}
+.need h3{
+    color: white;
+    font-size: 25px;
+    margin-left: 70px;
+}
+.sign{
+    width: 500px;
+    margin-top: 20px;
+    height: 600px;
+    margin-left: 20px;
+     background-color:rgb(255, 85, 80);
+}
+.sign h1{
+    font-size: 40px;
+    width: 500px;
+    text-align: center;
+    margin-top: 0px;
+    height: 80px;
+    background-color: white;
+}
+.sign input{
+    font-size: 35px;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sign select{
+    font-size: 30px;
+    width: 440px;
+    margin-top: 30px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.sign button{
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 30px;
+    background-color: red;
+    color: white;
+}

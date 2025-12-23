@@ -59,7 +59,9 @@ body {
 .hero {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, #00c3ff, #0066ff);
+    background-size: 100% 100vh;
+    /* background: linear-gradient(to right, #00c3ff, #0066ff); */
+    background-image: url(img/carousel-1.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,6 +69,7 @@ body {
     text-align: center;
     background-repeat: no-repeat;
 }
+
 
 .hero h1 {
     font-size: 48px;
@@ -84,12 +87,21 @@ body {
     flex: 1;
     background: #ddd;
     min-height: 300px;
+    background-image: url(img/about.jpg);
+    height: 70vh;
 }
 
 .about-text {
     flex: 1;
 }
-
+.about-text h3{
+    font-size: 30px;
+    color: #00c3ff;
+}
+.btn{
+    width: 150px;
+    font-size: 20px;
+}
 /* ===== SUBJECTS ===== */
 .subjects {
     padding: 60px;
@@ -162,5 +174,22 @@ footer {
     .offer {
         flex-direction: column;
         padding: 30px;
+    }
+}
+@media screen and (max-width:1300px){
+    .hero{
+        height: 50vh;
+    }  
+    .hero,img{
+        height: 50vh;
+        background-size: 100% 50vh;
+    }  
+}
+@media screen and (max-width:1300px){
+    .about-img{
+        height: 50vh;
+    }    
+    .about-text p {
+        font-size: 25px;
     }
 }
