@@ -62,6 +62,7 @@
     /* Hero */
     .hero {
       height: 90vh;
+      width: 100%;
       background: linear-gradient(to right, #4facfe, #00f2fe);
       background-image: url(img/carousel-1.jpg);
       background-repeat: no-repeat;
@@ -191,9 +192,13 @@
         font-size: 36px;
       }
     }
-    @media screen and (max-width:1300px){
+    @media (max-width:1110px){
         .hero {
           height: 65vh;
+        }
+        .hero img{
+          height: 50vh;
+          width: 44px;
         }
     }
   </style>
