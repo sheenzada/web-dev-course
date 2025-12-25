@@ -37,7 +37,7 @@ sums()
 console.log("Start of script.");
 
 setTimeout(() => {
-  console.log("This message appears after 2 seconds (2000ms)."); // This runs later
+  console.log("This message appears after 2 seconds (5000ms)."); // This runs later
 }, 5000);
 
 console.log("End of script.");
