@@ -12,7 +12,7 @@ setTimeout(() => {
     clearInterval(intervalId);
     console.log('Counter stopped');
     
-},10000);
+},5000);
 
 // let a=20;
 // let b=2+ a++
@@ -24,3 +24,13 @@ setTimeout(() => {
 // console.log(c);
 
 
+// let a=5;
+
+// for(let i=5 ; i<5 ; i++){
+//     for(j = 1 ; i<=j ; j++){
+//         console.log("*");
+        
+//     }
+//     console.log("*");
+    
+// }
