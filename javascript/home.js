@@ -52,16 +52,54 @@
 
 // Question four.......
 
-function create() {
-    let count = 1;
-    return function(){
-        count++;
-        console.log(`Button clicked ${count} times`);
+// function create() {
+//     let count = 1;
+//     return function(){
+//         count++;
+//         console.log(`Button clicked ${count} times`);
         
-    };
+//     };
+// }
+// const counter = create();
+
+// counter();
+// counter();
+
+
+
+//......Question five.....
+
+// let count = 0;
+// const interval = setInterval(() => {
+//     console.log("Keep going!");
+//     count++;
+//     if (count >= 5) clearInterval(interval);
+// }, 1000);
+
+
+let fun =(para , fun1)=> {
+    console.log(`the fun $ {para} is`);
+    fun1();
 }
-const counter = create();
+let fun1=()=>{
+    console.log("fun");
+    
+}
+fun("i",fun1)
 
-counter();
-counter();
 
+function fn(a,s){
+    
+    console.log(`the vlaues of para first ${a} and sec ${s}`);
+    child();
+    function child(){
+
+        console.log("child is running");
+        childs()
+        function childs(){
+            console.log('childs is run');
+            
+        }
+    }
+}
+fn(2,3)
