@@ -2,7 +2,7 @@ let count = 0;
 
 function incrementCounter(){
     count++;
-    console.log(`Count: ${count}`);
+    console.log(`dji: ${count}`);
     
 }
 
