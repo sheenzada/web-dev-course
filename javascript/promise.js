@@ -86,15 +86,75 @@
 
 
 
-let myPromise = new Promise(function(myResolve, myReject) {
-// "Producing Code" (May take some time)
+// let myPromise = new Promise(function(myResolve, myReject) {
+// // "Producing Code" (May take some time)
 
-  myResolve(); // when successful
-  myReject();  // when error
+//   myResolve(); // when successful
+//   myReject();  // when error
+// });
+
+// // "Consuming Code" (Must wait for a fulfilled Promise)
+// myPromise.then(
+//   function(value) { /* code if successful */ },
+//   function(error) { /* code if some error */ }
+// );
+
+
+
+function stepOne() {
+  return Promise.resolve("Data from Step One");
+}
+
+function stepTwo(data) {
+  console.log(data); // "Data from Step One"
+  return "Data from Step Two"; // This value is implicitly wrapped in a new Promise
+}
+
+function stepThree(data) {
+  console.log(data); // "Data from Step Two"
+  return "Final Result";
+}
+
+stepOne()
+  .then(stepTwo)
+  .then(stepThree)
+  .then(finalResult => console.log(finalResult)) // "Final Result"
+  .catch(error => console.error(error));
+
+
+
+
+
+
+
+
+
+
+
+
+  const myPromise = new Promise((resolve, reject) => {
+  // Simulate an asynchronous operation that takes some time to complete
+  setTimeout(() => {
+    const success = true; // This could be the result of an API call or other async task
+    if (success) {
+      resolve("Operation successful!"); // Call resolve if the operation succeeds
+    } else {
+      reject(new Error("Something went wrong.")); // Call reject if an error occurs
+    }
+  }, 1000); // 1 second delay
 });
 
-// "Consuming Code" (Must wait for a fulfilled Promise)
-myPromise.then(
-  function(value) { /* code if successful */ },
-  function(error) { /* code if some error */ }
-);
+// Consume the promise using .then(), .catch(), and .finally()
+myPromise
+  .then((result) => {
+    // This runs if the promise is resolved (fulfilled)
+    console.log(result); // Output: Operation successful!
+  })
+  .catch((error) => {
+    // This runs if the promise is rejected or an error is thrown in a .then()
+    console.error(error.message);
+  })
+  .finally(() => {
+    // This runs after the promise is settled (either fulfilled or rejected)
+    console.log("Promise settled (completed)");
+  });
