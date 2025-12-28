@@ -134,7 +134,7 @@ stepOne()
 
   const myPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    const success = true; 
+    const success = false; 
     if (success) {
       resolve("Operation successful!"); 
     } else {
