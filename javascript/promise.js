@@ -133,28 +133,24 @@ stepOne()
 
 
   const myPromise = new Promise((resolve, reject) => {
-  // Simulate an asynchronous operation that takes some time to complete
   setTimeout(() => {
-    const success = true; // This could be the result of an API call or other async task
+    const success = true; 
     if (success) {
-      resolve("Operation successful!"); // Call resolve if the operation succeeds
+      resolve("Operation successful!"); 
     } else {
-      reject(new Error("Something went wrong.")); // Call reject if an error occurs
+      reject(new Error("Something went wrong.")); 
     }
-  }, 1000); // 1 second delay
+  }, 1000); 
 });
 
-// Consume the promise using .then(), .catch(), and .finally()
 myPromise
   .then((result) => {
-    // This runs if the promise is resolved (fulfilled)
-    console.log(result); // Output: Operation successful!
+    console.log(result); 
   })
   .catch((error) => {
-    // This runs if the promise is rejected or an error is thrown in a .then()
     console.error(error.message);
   })
   .finally(() => {
-    // This runs after the promise is settled (either fulfilled or rejected)
+
     console.log("Promise settled (completed)");
   });
