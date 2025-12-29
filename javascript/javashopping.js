@@ -1,142 +1,107 @@
-const btnCart=document.querySelector('#cart-icon');
-const cart=document.querySelector('.cart');
-const btnClose=document.querySelector('#cart-close');
-
-btnCart.addEventListener('click',()=>{
-  cart.classList.add('cart-active');
-});
-
-btnClose.addEventListener('click',()=>{
-  cart.classList.remove('cart-active');
-});
-
-document.addEventListener('DOMContentLoaded',loadFood);
-
-function loadFood(){
-  loadContent();
-
-}
-
-function loadContent(){
-  //Remove Food Items  From Cart
-  let btnRemove=document.querySelectorAll('.cart-remove');
-  btnRemove.forEach((btn)=>{
-    btn.addEventListener('click',removeItem);
-  });
-
-  //Product Item Change Event
-  let qtyElements=document.querySelectorAll('.cart-quantity');
-  qtyElements.forEach((input)=>{
-    input.addEventListener('change',changeQty);
-  });
-
-  //Product Cart
-  
-  let cartBtns=document.querySelectorAll('.add-cart');
-  cartBtns.forEach((btn)=>{
-    btn.addEventListener('click',addCart);
-  });
-
-  updateTotal();
-}
+// Promise.all([
+//     new Promise((resolve) =>
+//         setTimeout(() =>
+//             resolve("Task A done"), 1000)),
+//     new Promise((resolve) =>
+//         setTimeout(() =>
+//             resolve("Task B done"), 500))
+// ])
+//     .then(([resultA, resultB]) => {
+//         console.log(resultA, resultB);
+//         return new Promise((resolve) =>
+//             setTimeout(() => resolve("Final Task done"), 700));
+//     })
+//     .then((finalResult) =>
+//         console.log(finalResult));
 
 
-//Remove Item
-function removeItem(){
-  if(confirm('Are Your Sure to Remove')){
-    let title=this.parentElement.querySelector('.cart-food-title').innerHTML;
-    itemList=itemList.filter(el=>el.title!=title);
-    this.parentElement.remove();
-    loadContent();
-  }
-}
-
-//Change Quantity
-function changeQty(){
-  if(isNaN(this.value) || this.value<1){
-    this.value=1;
-  }
-  loadContent();
-}
-
-let itemList=[];
-
-//Add Cart
-function addCart(){
- let food=this.parentElement;
- let title=food.querySelector('.food-title').innerHTML;
- let price=food.querySelector('.food-price').innerHTML;
- let imgSrc=food.querySelector('.food-img').src;
- //console.log(title,price,imgSrc);
- 
- let newProduct={title,price,imgSrc}
-
- //Check Product already Exist in Cart
- if(itemList.find((el)=>el.title==newProduct.title)){
-  alert("Product Already added in Cart");
-  return;
- }else{
-  itemList.push(newProduct);
- }
 
 
-let newProductElement= createCartProduct(title,price,imgSrc);
-let element=document.createElement('div');
-element.innerHTML=newProductElement;
-let cartBasket=document.querySelector('.cart-content');
-cartBasket.append(element);
-loadContent();
-}
+// Shopping Cart using JavaScript 
 
+// Product list (store)
+const products = [
+  { id: 1, name: "Apple", price: 2 },
+  { id: 2, name: "Banana", price: 1 },
+  { id: 3, name: "Orange", price: 3 }
+];
 
-function createCartProduct(title,price,imgSrc){
+// Cart
+let cart = [];
 
-  return `
-  <div class="cart-box">
-  <img src="${imgSrc}" class="cart-img">
-  <div class="detail-box">
-    <div class="cart-food-title">${title}</div>
-    <div class="price-box">
-      <div class="cart-price">${price}</div>
-       <div class="cart-amt">${price}</div>
-   </div>
-    <input type="number" value="1" class="cart-quantity">
-  </div>
-  <ion-icon name="trash" class="cart-remove"></ion-icon>
-</div>
-  `;
-}
+// Add item to cart
+function addToCart(productId, quantity = 1) {
+  const product = products.find(p => p.id === productId);
 
-function updateTotal()
-{
-  const cartItems=document.querySelectorAll('.cart-box');
-  const totalValue=document.querySelector('.total-price');
-
-  let total=0;
-
-  cartItems.forEach(product=>{
-    let priceElement=product.querySelector('.cart-price');
-    let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
-    let qty=product.querySelector('.cart-quantity').value;
-    total+=(price*qty);
-    product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
-
-  });
-
-  totalValue.innerHTML='Rs.'+total;
-
-
-  // Add Product Count in Cart Icon
-
-  const cartCount=document.querySelector('.cart-count');
-  let count=itemList.length;
-  cartCount.innerHTML=count;
-
-  if(count==0){
-    cartCount.style.display='none';
-  }else{
-    cartCount.style.display='block';
+  if (!product) {
+    console.log("❌ Product not found");
+    return;
   }
 
+  const cartItem = cart.find(item => item.id === productId);
 
+  if (cartItem) {
+    cartItem.quantity += quantity;
+  } else {
+    cart.push({ ...product, quantity });
+  }
+
+  console.log(`✅ Added ${quantity} ${product.name}(s) to cart`);
 }
+
+// Remove item from cart
+function removeFromCart(productId) {
+  cart = cart.filter(item => item.id !== productId);
+  console.log("🗑️ Item removed from cart");
+}
+
+// Update quantity
+function updateQuantity(productId, quantity) {
+  const item = cart.find(item => item.id === productId);
+
+  if (!item) {
+    console.log("❌ Item not found in cart");
+    return;
+  }
+
+  item.quantity = quantity;
+  console.log("🔄 Quantity updated");
+}
+
+// View cart
+function viewCart() {
+  if (cart.length === 0) {
+    console.log("🛒 Cart is empty");
+    return;
+  }
+
+  console.log("🛒 Your Cart:");
+  cart.forEach(item => {
+    console.log(
+      `${item.name} - $${item.price} x ${item.quantity} = $${item.price * item.quantity}`
+    );
+  });
+
+  console.log(`💰 Total: $${getTotal()}`);
+}
+
+// Get total price
+function getTotal() {
+  return cart.reduce((total, item) => {
+    return total + item.price * item.quantity;
+  }, 0);
+}
+
+// --------------------
+// Example Usage
+// --------------------
+addToCart(1, 2);   // Add 2 Apples
+addToCart(2, 3);   // Add 3 Bananas
+addToCart(3);      // Add 1 Orange
+viewCart();
+
+updateQuantity(2, 5);
+viewCart();
+
+removeFromCart(1);
+viewCart();
