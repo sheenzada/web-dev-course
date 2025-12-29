@@ -46,3 +46,4 @@ async function createNewUser() {
 
 // Call the function to create a new user
 createNewUser();
+console.log("hi");
