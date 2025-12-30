@@ -127,6 +127,27 @@ stepOne()
 
 
 
+  function tajwar (){
+    return Promise.resolve("hello wold")
+  }
+  function ali (){
+    console.log("hello guys");
+    
+  }
+  function inam (){
+    console.log("ga yo la jani");
+    
+  }
+  tajwar()
+    .then(ali)
+    .then(inam)
+
+
+
+
+
+
+
 
 
 
@@ -142,6 +163,34 @@ stepOne()
     }
   }, 1000); 
 });
+
+
+const ipromise = new Promise((resolve, reject) => {
+  setTimeout(()=>{
+    const second = false;
+    if (second){
+      resolve("operation successfull")
+    }
+    else{
+      reject(new Error("something went wrooooooooong "));
+    }
+  },1000);
+});
+
+ipromise
+  .then((ol) => {
+    console.log(ol);
+    
+  })
+  .catch((ghalat) => {
+    console.error(ghalat.message);
+    
+  })
+  .finally(() => {
+    console.log("Promise (completed)");
+    
+  });
+
 
 myPromise
   .then((result) => {
