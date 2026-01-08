@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productitem.css">
+</head>
+
+<body>
+    <section class="mainsection">
+        <div class="item1">
+            <img src="./images/Grupo 314.png" alt="" id="" onclick="fun(this)">
+            <img src="./images/Grupo 316.png" alt="" id="" onclick="fun(this)">
+            <img src="./images/Grupo 317.png" alt="" id="" onclick="fun(this)">
+        </div>
+        <div class="item2">
+            <img src="./images/1.png" alt="not dound" id="imagebox">
+        </div>
+        <div class="description">
+            <h2>product name</h2>
+            <h1>best quality</h1>
+            <h3><span><del>RS :120$</del></span><span> RS 100$</span></h3>
+            <div>
+                <table>
+                    <form action="">
+                        <tr>
+                 <td><label for="quality">Quantity
+                </label></td>
+               
+                    <td> <input type="number" max="100" min="1"></td>
+                     <td>  <input type="button" name="" id="" value="Total price"></td>
+                </tr>
+                </form>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function fun(elm) {
+            var item2 = document.getElementById('imagebox');
+            item2.src = elm.src;
+
+        }
+    </script>
+</body>
+
+</html>

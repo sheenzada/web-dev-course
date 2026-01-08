@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login...</title>
+    <script src="./js/javascript.js"></script>
+    <!-- <link rel="stylesheet" href="./responsive/responsive.css"> -->
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .loginMainCon{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/registration.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .loginMainCon .loginContainer{
+        width: 320px;
+        height: 450px;
+        /* margin-left: 33%; */
+        padding: 2%;
+        border-radius: 20px;
+        background-image: url('./images/registration.jpg');
+        background-size: cover;
+
+    }
+    .loginContainer #h3{
+        text-align: center;
+        font-size: 50px;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: rgb(23, 199, 134);
+        letter-spacing: 3px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .loginContainer #h4{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(19, 18, 18);
+        /* text-align: center; */
+        margin-top: 12%;
+
+    }
+    .loginContainer #uname,#pass,#confirmPass{
+        width: 300px;
+        height: 30px;
+        border-radius: 10px ;
+        font-size: 20px;
+        padding-left: 10px;
+        border: inset;
+
+        
+    }
+  
+    .loginContainer #pass-div{
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .loginContainer #hide{
+        position: absolute;
+        width: 30px;
+        height: 25px;
+        top: 5px;
+        right: 0px;
+        
+    }
+    #hide img{
+        width: 100%;
+        height: inherit;
+    }
+    .loginContainer #confirm-pass{
+        width: 300px;
+        height: 30px;
+        /* border-radius: 10px; */
+        position: relative;
+    }
+    #confirm-pass #hide1{
+        position: absolute;
+        width: 30px;
+        height: 25px;
+        top: 5px;
+        right: 0px;
+    }
+    #hide1 img{
+        width: 100%;
+        height: inherit;
+    }
+  
+    .loginContainer #loginBtn{
+        width: 317px;
+        height: 40px;
+        /* margin-left: 10%; */
+        border-radius: 10px;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        margin-top: 3%;
+        border: inset;
+    }
+
+    .loginContainer #error{
+        width: 300px;
+        height: 30px;
+        margin-top: 6%;
+        margin-bottom: 1%;
+        font-size: 17px;
+        color: red;
+        /* font-weight: bold; */
+        font-family:Arial, Helvetica, sans-serif ;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 1000px) {
+
+
+
+/* Login Page */
+
+.loginMainCon {
+    width: 100%;
+    height: 100vh;
+}
+.loginMainCon .loginContainer {
+    width: 250px;
+    height: 386px;
+    padding: 3%;
+}
+.loginContainer #h3 {
+    text-align: center;
+    font-size: 33px;
+    color: white;
+}
+.loginContainer #h4 {
+    font-size: 18px;
+}
+.loginContainer #uname, #pass, #confirmPass {
+    width: 235px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 8px;
+}
+.loginContainer #pass-div {
+    width: 235px;
+    height: 25px;
+}
+
+.loginContainer #hide {
+    position: absolute;
+    width: 30px;
+    height: 21px;
+}
+.loginContainer #confirm-pass {
+    width: 235px;
+    height: 25px;
+}
+
+#confirm-pass #hide1 {
+    position: absolute;
+    width: 30px;
+    height: 21px;
+}
+.loginContainer #error {
+    width: 235px;
+    height: 25px;
+    margin-top: 6%;
+    font-size: 15px;
+    margin-bottom: 1%;
+
+}
+.loginContainer #loginBtn {
+    width: 245px;
+    height: 30px;
+    /* margin-left: 10%; */
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 3%;
+}
+}
+
+@media screen and (max-width: 650px) {
+    
+    .loginMainCon {
+    width: 100%;
+    height: 100vh;
+    }
+    .loginMainCon .loginContainer {
+    width: 190px;
+    height: 298px;
+    /* margin-left: 30%; */
+    padding: 3%;
+    }
+    .loginContainer #h3 {
+    text-align: center;
+    font-size: 25px;
+    }
+    .loginContainer #h4 {
+    font-size: 16px;
+    }
+    .loginContainer #uname, #pass, #confirmPass {
+    width: 180px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 7px;
+    }
+    .loginContainer #pass-div {
+    width: 190px;
+    height: 20px;
+    }
+    .loginContainer #hide {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    width: 20px;
+    height: 14px;
+    border-radius: 40px;
+   
+    }
+    #hide img{
+        border-radius: 40px;
+    }
+    .loginContainer #confirm-pass {
+    width: 190px;
+    height: 20px;
+    }
+    #confirm-pass #hide1 {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    width: 20px;
+    height: 14px;
+    border-radius: 40px;
+    }
+    #hide1 img{
+        border-radius: 40px;
+    }
+
+    .loginContainer #error {
+    width: 190px;
+    height: 20px;
+    margin-top: 6%;
+    margin-bottom: 1%;
+    font-size: 13px;
+    }
+    .loginContainer #loginBtn {
+    width: 193px;
+    height: 25px;
+    /* margin-left: 10%; */
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 7%;
+
+    }
+    
+}
+
+@media screen  and (max-width: 520px){
+
+    .loginMainCon .loginContainer {
+    width: 190px;
+    height: 298px;
+    }
+    
+}
+
+/* login page end */
+   
+</style>
+<body>
+    <div class="loginMainCon">
+    <div class="loginContainer">
+        <h3 id="h3">WellCome</h3>
+        <h4 id="h4"> User Name </h4> 
+        <input type="text" id="uname" onkeyup="check()">
+        <h4 id="h4"> Password </h4> 
+     <div id="pass-div">
+        <input type="password" id="pass" onkeyup="checkPass(this)">
+    
+        <div id="hide"><img src="./icon/download.png" alt=""  onclick="ShowPass()"></div>
+    </div>
+    
+        <h4 id="h4">Confirm Password </h4> 
+        <div id="confirm-pass">
+        <input type="password" id="confirmPass">
+        <div id="hide1"><img src="./img/menuicn.png" alt="" onclick="ShowConfirmPass()"></div>
+    </div>
+        <div id="error"></div>
+        <button id="loginBtn" onclick="login()">Login</button>
+    </div>
+</div>
+</body>
+<script>
+      //    Hide-Show-password-code-start     
+   var flag1=document.getElementById('pass');
+   function ShowPass(){
+     var type=flag1.getAttribute('type');
+     if(type=='password'){
+       flag1.setAttribute('type','text');
+
+     }
+     else{
+       flag1.setAttribute('type','password');
+     }
+   }
+
+   var flag2=document.getElementById('confirmPass');
+   function ShowConfirmPass(){
+       var type=flag2.getAttribute('type');
+     if(type=='password'){
+       flag2.setAttribute('type','text');
+
+     }
+     else{
+       flag2.setAttribute('type','password');
+     }
+   }
+
+   // Hide-show-code end
+
+
+
+   // Login
+
+   function login(){
+       var uname=document.getElementById('uname').value;
+       var pass=document.getElementById('pass').value;
+       var confirmPass=document.getElementById('confirmPass').value;
+       if(uname=='' && pass=='' && confirmPass==''){
+        document.getElementById('error').innerHTML='Empty User Name and Password';
+
+       }
+       else if(uname=='' && pass==''){
+        document.getElementById('error').innerHTML='Empty User Name and Password';
+       }
+       else if(uname=='' && confirmPass==''){
+        document.getElementById('error').innerHTML='Empty User Name and Confirm Password';
+       }
+       else if(uname==''){
+           document.getElementById('error').innerHTML='Empty User Name';
+       }
+       else if(pass==''){
+           document.getElementById('error').innerHTML='Empty Password';
+
+       }
+       else if(confirmPass==''){
+        document.getElementById('error').innerHTML='Empty Confirm Password';
+       }
+       else{
+           if(uname=='ali' && pass=='1122' && confirmPass=='1122'){
+           
+           window.location.assign('index.html');
+          
+       }
+       else{
+
+            
+           if(uname!='ali' && pass!='1122' || uname!='ali' && confirmPass!='1122'  ){
+               document.getElementById('error').innerHTML=' Invalid User Name and Password ';
+           }
+           else if(uname!='ali'){
+               document.getElementById('error').innerHTML='Invalid User Name ';
+           }
+           else{
+               document.getElementById('error').innerHTML='Password does not match ';
+           }
+           
+       }
+       }
+      
+   }
+</script>
+</html>

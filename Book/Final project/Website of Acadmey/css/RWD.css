@@ -1,0 +1,363 @@
+.headerformob{
+    display: none;
+}
+.hedingpc{
+    display: none;
+}
+.headingexplor{
+    display: none;
+}
+#active{
+    color: #F3525A;
+  
+}
+.ECOURSE h1::first-letter{
+    color: #FF6600;
+  }
+  .navagaction .navbar {
+    align-items: center;}
+input[type="checkbox"]{display: none;}
+label img{
+    width: 15%;
+    height: 8vh;
+    margin: 23px;
+}
+  @media screen and (max-width: 1000px)
+  {
+    #ECO {
+     display: none;
+     
+     }
+     .head {
+        width: 100%;
+        height: 13vh;
+    }
+     /* .homescreen {
+        display: none;
+    } */
+     .navagaction {
+    display: none;
+    }
+    .headerformob{
+        width: 50%;
+        height: 10vh;
+        display: block;
+  
+        }
+        .headerformob {
+            width: 100%;
+            height: 10vh;
+            position: relative; 
+        }
+        #hmobilee{
+           background-image: url('../img/logo.png');
+           background-size: 80% 5vh;
+           background-repeat: no-repeat;
+           background-position: right;
+        }
+        .headerbar{
+            width: 50%;
+            height: 50vh;
+            position: relative;
+            left: -100%;
+            transition: 2s;
+            margin-top: 0vh;
+        }
+        input[type="checkbox"]:checked ~ .headerbar{
+            left: 0%;
+        }
+        
+         .navchild{
+            width: 40%;
+            height: 6vh;
+            font-size: 40px;
+      
+  
+        }
+         .navchild a{
+          text-decoration: none;
+          color:white;
+       
+        }
+        .jointbar{
+          width: 50%;
+        }
+        #drack{
+            position: relative;
+        }
+        #drack1 {
+            width: 10%;
+             height: 8vh;
+            position: absolute;
+            top: 0%;
+            left: 85%;
+        }
+        
+        .section {
+            width: 100%;
+            height: 80vh;
+            background-image: url(../img//page-header.jpg);
+            background-size: 100% 60vh;
+            background-repeat: no-repeat;
+            /* position: relative; */
+        }
+      
+        .home1 {
+            margin-top: 55vh;
+            width: 30%;}
+            .home2 h1{
+                font-size: 40px;
+                font-weight: bolder;
+                font-family: Arial Black;
+            }
+            .aboutus {
+                width: 100%;
+                height: 180vh;
+                align-items: center;
+                flex-direction: column;
+            }
+            .contact {
+                width: 100%;
+                height: 80vh;
+                border-radius: 10px;
+            }
+            .contact img {
+                border-radius: 10px;
+                width: 100%;
+                height: 70vh;
+            }
+            .papularcoueses {
+                width: 100%;
+                height: 340vh;
+             
+                display: flex;
+                justify-content: space-around;
+            }
+            .papularcourse, .papularcourse1 {
+                width: 40%;
+                height: 350vh;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+              
+            }
+            .papularcoueses h1, .papularcoueses h2 , .explore h1, .explore h2{
+                display: none;
+            }
+            .childcourses {
+                width: 100%;
+                height: 80vh;
+                margin-left: 0px;
+                background-color: whitesmoke;
+            }
+            .hedingpc{
+                width: 100%;
+                height: 3vh;
+                display: block;
+                text-align: center
+            }
+            .explore {
+                width: 100%;
+                height: 210vh;
+               display: flex;
+               justify-content: space-around;
+            }
+            .explore1, .explore2 {
+                width: 40%;
+                height: 200vh;
+              flex-direction: column;
+                margin-left: 0%;
+                margin-top: 3vh;
+                justify-content: space-around;
+              
+            }
+            .headingexplor{
+                width: 100%;
+                height: 13vh;
+                display: block;
+                text-align: center
+            }
+            .expl1 , .expl2 , .expl3 , .expl4 , .expl5 , .expl6 , .expl7 , .expl8{
+                width: 100%;
+                height: 40vh;
+                background-size: 100% 40vh;
+            }
+            .expl1:hover ,.expl2:hover , .expl3:hover ,.expl4:hover ,.expl5:hover , .expl6:hover ,.expl7:hover , .expl8:hover{
+                background-size: 110% 43vh !important;
+              }
+              .team {
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 10px;
+            }
+            .member {
+                width: 20%;
+                height: 50vh;
+                background-color: whitesmoke;
+                border-radius: 10px;
+                margin-left: 0px;
+            }
+            .blogimg {
+                width: 100%;
+                height: 70vh;
+                display: flex;
+                justify-content: space-around;
+            }
+            .footer {
+                width: 100%;
+                height: 250vh;
+                color: white;
+                background-color: rgb(24 24 60);
+                flex-direction: column;
+                align-items: center;
+            }
+            .footerfirst {
+                width: 30%;
+                height: 30vh;
+                font-size: 24px;
+            }
+            .footersec {
+                width: 40%;
+                height: 30vh;
+                font-size: 25px;
+            }
+            .query {
+                width: 100%;
+                height: 110vh;
+             
+            }
+            .queryform {
+                width: 100%;
+                height: 100vh;
+                background-color: whitesmoke;
+                position: relative;
+                left: 0%;
+            }
+            .queryform input {
+                width: 80%;
+                height: 12vh;
+                font-size: 25px;
+                border-radius: 10px;
+                margin-top: 15px;
+                border: none;
+            }
+            .queryform #Message {
+                font-size: 29px;
+                
+            }
+            .c {
+                width: 100%;
+                height: 30vh;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+  }
+  @media screen and (max-width: 700px)
+{
+    .chooseus {
+        width: 100%;
+        height: 240vh;
+        background-image: url(../img/registration.jpg);
+        background-size: 100% 235vh;
+        background-repeat: no-repeat;
+        opacity: 1;
+       
+        flex-direction: column;
+    }
+    .explore {
+    width: 100%;
+    height: 410vh;
+   flex-direction: column;
+}
+.expl1, .expl2, .expl3, .expl4, .expl5, .expl6, .expl7, .expl8 {
+    width: 100%;
+    height: 40vh;
+    background-size: 100% 40vh;
+}
+.explore1, .explore2 {
+    width: 100%;
+    height: 200vh;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 3vh;
+    justify-content: space-around;
+}
+.papularcoueses {
+    width: 100%;
+    height: 640vh;
+   flex-direction: column;
+ 
+}
+.childcourses {
+    width: 100%;
+    height: 100vh;
+    margin-left: 0px;
+    background-color: whitesmoke;
+}
+.papularcourse, .papularcourse1 {
+    width: 100%;
+}
+
+.c {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.team {
+    width: 100%;
+    height: 280vh;
+   flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.member {
+    width: 100%;
+        height: 60vh;
+}
+.blog {
+    width: 100%;
+    height: 230vh;
+    text-align: center;
+}
+.blogimg {
+    width: 100%;
+    height: 200vh;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.blog1  , .blog2 , .blog3  {
+    width: 100%;
+   }
+
+.teams {
+    width: 100%;
+    height: 300vh;
+    margin-top: 10px;
+}
+div {
+    display: block;
+}
+.papularcoueses {
+    width: 100%;
+    height: 708vh;
+    text-align: center;
+}
+    .choose2 {
+        width: 100%;
+        height: 80vh;
+        margin-top: 90px;
+        background-color: white;
+    }
+    .choose1 {
+        width: 100%;
+        height: 60vh;
+        margin-top: 100px;
+    }
+    .footer #gmailo{
+        display: none;
+    }
+}

@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>registerbtn</title>
+</head>
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/RWD.css">
+<link rel="stylesheet" href="./Boostrap/css/bootstrap.min.css">
+
+</head>
+<style> 
+ form{
+        font-size: large;
+    }
+    #pre{
+        right: 0;
+    }
+</style>
+
+<body>
+  <!-- header section start -->
+
+  <div class="header">
+    <div class="header1">
+      <div class="navsteet">
+        <span>steet 124 ,Blatistan,Pakistan</span>
+        <span>+923555165163</span>
+        <span>anjumbalgharii@gmail.com</span>
+      </div>
+      <div class="navsteet1">
+        <div class="navre"></div>
+        <div class="navre"></div>
+        <div class="navre"></div>
+        <div class="navre"></div>
+      </div>
+    </div>
+    <div class="header2">
+      <div class="navbar">
+        <div class="navlogo">
+          <img src="./img/Circle Organic Nuts Farm Logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="navbar1">
+        <div class="navchild"><a href="./index.html"  >Home</a></div>
+        <div class="navchild"><a href="./About.html">About</a></div>
+        <div class="navchild"><a href=""> Categary</a></div>
+        <div class="navchild"><a href="">Blog</a></div>
+        <div class="navchild"><a href="./Contact.html">Contact</a></div>
+        <div class="navlogin"><a href="./registractio.html" style="color: tomato;" >Registraction</a></div>
+      </div><div class="reg">
+      <div class="navlogin"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><strong>Login</strong></button></div>
+      
+    </div>
+    
+    </div>
+    
+  </div>
+  <!-- login form -->
+  <div id="id01" class="modal">
+    
+  <form class="modal-content animate" action="#" >
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title=" Close Modal">&times;</span>
+        <img src="./img/Circle Organic Nuts Farm Logo.png" alt="Avatar" class="avatar" >
+      </div>
+  <!-- main section -->
+    
+  <!-- reg section -->
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="email" placeholder="Enter email" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+           
+            <h4 class="card-title ">Form</h4>
+            <p class="card-description">
+              Fill the form valid information
+            </p>
+            <form class="forms-sample" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              </div>
+                  <div class="form-group">
+                    <label for="mob">Mobile</label>
+                    <input type="tel" class="form-control" id="mob"name="mob" placeholder="Mobile number">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="pswd">Password</label>
+                <input type="password" class="form-control" id="pswd" name="pswd" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                  <select class="form-control" id="gender" name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              <div class="form-group">
+                <label for="file">File upload</label>
+                <input type="file" name="file" class="file-upload-default">
+               
+              </div>
+              <div class="form-group">
+                  <label for="state">State</label>
+                  <input type="text" class="form-control" id="state" name="state" placeholder="Location">
+                </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="Location">
+              </div>
+              <div class="form-group">
+                <label for="textarea">Textarea</label>
+                <textarea class="form-control" id="textarea" name="textarea" rows="4"></textarea>
+              </div>
+              <button type="reset" class="btn btn-light color:white">Reset</button>
+               <button type="submit" class="btn btn-secondary mr-2"> Submit</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+         
+      <div class="footer">
+        <div class="footer1">
+          
+          <img src="./images/location.png" alt=" not found" />
+          <h4>Pakistan Giglit Blatistan</h4><br>
+          <img src="./images/mail.png" alt=" not found" />
+          <h4><a href="anjumbalgharii@gmail.com">anjumbalgharii @gmail.com</a></h4><br>
+          <img src="./images/phone.png" alt=" not found" />
+          <h4>+923555165163</h4>
+        </div>
+    
+        <div class="footer2">
+          <h3>COMPANY INFO</h3>
+          
+            <a href=""> About US </a>
+            <a href=""> Contact </a>
+            <a href=""> Blog </a>
+           
+          
+        </div>
+        <div class="footer3">
+          <h3>MY ACCOUNT</h3>
+    
+          
+            <a href=""> login </a><br /><br />
+            <a href=""> Register </a><br /><br />
+            <a href=""> My Card </a><br /><br />
+            <a href=""> Wishlist </a><br /><br />
+            <a href=""> Menu5 </a><br /><br />
+         
+        </div>
+         <div class="footer5">
+          <h2>CUSTOMER SERVISE</h2>
+          <h4>Privacy</h4>
+          <h4>Return Policy</h4>
+          <h4>Shipping Policy</h4>
+          <h4>Delivery</h4>
+          <h4>Trems and Condaction</h4>
+    
+         </div>
+        <div class="footer4">
+          <h1>Follow us</h1>
+          <div class="foo">
+          <div class="foodinh1"> <a href="#" style="color: white; text-decoration: nonex">
+            <img src="./images/Grupo 314.png" alt="" /> 
+           </a></div>
+          <div class="foodinh2"> <a href="#" style="color: white; text-decoration: nonex">
+            <img src="./images/Grupo 315.png" alt="" />
+          </a></div>
+          <div class="foodinh3"><a href="#" style="color: white; text-decoration: nonex">
+            <img src="./images/Grupo 316.png" alt="" /> 
+           </a></div>
+          <div class="foodinh4"><a href="#" style="color: white; text-decoration: nonex">
+            <img src="./images/Grupo 317.png" alt="" /> 
+           </a></div>
+          <div class="foodinh5"><a href="#" style="color: white; text-decoration: nonex">
+            <img src="./images/Grupo 318.png" alt="" /> 
+            </a>
+           
+        
+          </div>
+         
+          
+        </div>
+        <div class="foodternaveter">
+          <h4>SIGN UP TO NEWSLETTER</h4><form action=""><input type="email" placeholder="Enter your email" required id="ft"> <input type="submit" value="Sign Up" id="ft1"></form></div>
+      </div>
+        <!-- <div class="address">
+          <address>Web Developer :Anjum Balghari</address>
+        </div> -->
+        </div>
+          <script src="./card.js"></script>
+</body>
+</html>

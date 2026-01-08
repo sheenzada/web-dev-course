@@ -1,0 +1,1440 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header {
+        width: 100%;
+        height: 110vh;
+        background-image: url(./img/Grupo\ de\ máscara\ 15.png);
+        background-repeat: no-repeat;
+        background-size: 100% 80vh;
+        background-position: right;
+    }
+
+    .nav1 {
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: baseline;
+
+    }
+
+    .nav2 {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: baseline;
+        margin-top: 10px;
+
+    }
+
+    .na1,
+    .na2 {
+
+        width: 12%;
+        height: 18vh;
+
+    }
+
+    .na1 a {
+        margin-top: 20px;
+        color: white;
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    .na2 a {
+        margin-top: 20px;
+        color: black;
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    .gur {
+        width: 60%;
+        height: 50vh;
+        text-align: center;
+
+    }
+
+    .gur span {
+        text-transform: uppercase;
+        font-size: 80px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: #ffc107;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .gur h1 {
+
+        font-size: 60px;
+        font-weight: bold;
+
+    }
+
+    .gur h2 {
+        font-size: 40px;
+        text-align: start;
+        padding-left: 120px;
+        font-weight: bold;
+    }
+
+    .gef {
+        width: 40%;
+        height: 14vh;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .ges {
+        width: 40%;
+        height: 12vh;
+    }
+
+    .ges img {
+        width: 100%;
+        height: 12vh;
+    }
+
+    .ged {
+        width: 30%;
+        height: 8vh;
+    }
+
+    .ged button {
+        width: 100%;
+        height: 8vh;
+        color: white;
+        font-size: 10px;
+        background-color: black;
+        font-size: 13px;
+        font-weight: bold;
+        border-radius: 20px;
+        margin-top: 5px;
+    }
+
+    .gea {
+        width: 13%;
+        height: 10vh;
+        background-color: #ffc107;
+        border-radius: 12px;
+    }
+
+    .gea img {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .dill {
+        background-color: rgb(172, 238, 17);
+    }
+
+    .blackp {
+        width: 100%;
+        height: 25vh;
+        background-color: black;
+        margin-top: 100px;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .bp_1st {
+        margin-top: 50px;
+        width: 10%;
+        height: 20vh;
+    }
+
+    .bp_lst {
+        margin-top: 50px;
+        width: 10%;
+        height: 20vh;
+    }
+
+    .bp_1st img,
+    .bp_lst img {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .mbp {
+        width: 40%;
+        height: 20vh;
+        display: flex;
+
+    }
+
+    .bp1 {
+        width: 50%;
+        height: 19vh;
+        border-left: 6px solid white;
+        color: white;
+    }
+
+    .bp img,
+    .bp1 img,
+    .bpr img {
+        width: 10%;
+        height: 4vh;
+        margin-left: 88px;
+    }
+
+    .bp1 {
+        width: 100%;
+        height: 20vh;
+        margin-top: 12px;
+        height: 20vh;
+    }
+
+    .mbp1 {
+        width: 50%;
+        height: 20vh;
+        display: flex;
+
+    }
+
+    .bp {
+        width: 50%;
+        height: 19vh;
+        color: white;
+
+    }
+
+    .bpr {
+        width: 50%;
+        height: 20vh;
+        margin-top: 12px;
+        color: white;
+        border-left: 6px solid white;
+    }
+
+    .pap_srch {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .srch {
+        width: 50%;
+        height: 10vh;
+    }
+
+    .pap_dot {
+        width: 30%;
+        height: 10vh;
+    }
+
+    .pap_srch button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 8px;
+        margin-top: 11px;
+    }
+
+    .bl {
+        background-color: black;
+    }
+
+    .gry {
+        background-color: #ffc107;
+    }
+
+    .hf {
+        background-color: #ac9c6c;
+    }
+
+    .main_product {
+        width: 100%;
+        height: 180vh;
+
+    }
+
+    .pro1 {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .first_product {
+        width: 50%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fp {
+        width: 40%;
+        height: 30vh;
+    }
+
+    .fp img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .fp button {
+        border-radius: 10%;
+        background-color: #ffc107;
+    }
+
+    .fp h1,
+    .fp h2 {
+        text-align: center;
+    }
+
+    .b1 {
+        width: 55%;
+        height: 6vh;
+        border-radius: 2px;
+        margin-right: 30px;
+    }
+
+    .fp .b1 {
+        background: black;
+        color: white;
+        font-size: 12px;
+    }
+
+    .b2 {
+        width: 20%;
+        height: 6vh;
+    }
+
+    .b2 img {
+        width: 100%;
+        height: 30px;
+    }
+
+    .b1 img {
+        width: 10%;
+        height: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .bcard {
+        width: 60%;
+        height: 80vh;
+        background-image: url('./img/Grupo 99.png');
+        background-repeat: no-repeat;
+        background-size: 100% 60vh;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .bcard h1 {
+        position: absolute;
+        text-align: right;
+        width: 90%;
+        top: 30vh;
+        font-size: 40px;
+        font-size: 50px;
+    }
+
+    .bcard h3 {
+        position: absolute;
+        text-align: right;
+        width: 84%;
+        top: 44vh;
+        font-size: 30px;
+    }
+
+    .scard {
+        width: 30%;
+        height: 70vh;
+        justify-content: space-around;
+
+
+    }
+
+    .sc1 {
+        width: 100%;
+        height: 30vh;
+        background-image: url('./img/Grupo de máscara 16.png');
+        background-repeat: no-repeat;
+        background-size: 100% 28vh;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .sc1 h1 {
+        position: absolute;
+        text-align: right;
+        width: 100%;
+        top: 10vh;
+        font-size: 40px;
+
+    }
+
+    .sc1 h3 {
+        position: absolute;
+        text-align: right;
+        top: 19vh;
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .sc2 {
+        width: 100%;
+        height: 30vh;
+        background-image: url('./img/Grupo 332.png');
+        background-repeat: no-repeat;
+        background-size: 100% 28vh;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .sc2 h1 {
+        position: absolute;
+        text-align: right;
+        width: 100%;
+        top: 9vh;
+        font-size: 35px;
+    }
+
+    .sc2 h3 {
+        width: 80%;
+        position: absolute;
+        text-align: right;
+        top: 20vh;
+        font-size: 15px;
+    }
+
+    .cl {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .cl1 {
+        width: 40%;
+        height: 30vh;
+        background-image: url('./img/Grupo 330.png');
+        background-repeat: no-repeat;
+        background-size: 100% 28vh;
+        color: white;
+        text-align: center;
+    }
+
+    .cl2 {
+        width: 40%;
+        height: 30vh;
+        position: relative;
+        background-image: url('./img/Grupo 328.png');
+        background-repeat: no-repeat;
+        background-size: 100% 28vh;
+        color: white;
+        text-align: center;
+    }
+
+    .cl2 h1 {
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        top: 10vh;
+        font-size: 40px;
+    }
+
+    .cl2 h3 {
+        position: absolute;
+        text-align: right;
+        width: 85%;
+        top: 22vh;
+        font-size: 20px;
+    }
+
+    .cl1 h1 {
+        position: absolute;
+        text-align: right;
+        width: 35%;
+        top: 10vh;
+
+        font-size: 40px;
+    }
+
+    .cl1 h3 {
+        position: absolute;
+        text-align: right;
+        width: 30%;
+        top: 22vh;
+        font-size: 20px;
+    }
+
+    .fsale {
+
+        height: 30vh;
+        background-color: #ffc107;
+        display: flex;
+        width: 95%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        justify-content: space-between;
+        padding-right: 42px;
+
+    }
+
+    .sp {
+        width: 20%;
+        height: 44vh;
+
+    }
+
+    .sp1 {
+        margin-top: 42px;
+        width: 24%;
+        height: 22vh;
+        background-color: white;
+        border-radius: 22px;
+        background-image: url('./img/alienwear.png');
+        background-repeat: no-repeat;
+        background-size: 30% 20vh;
+        text-align: right;
+        position: relative;
+    }
+
+    .spw {
+        width: 4%;
+        height: 10vh;
+        margin-top: 15vh;
+    }
+
+    .spw img {
+        width: 100%;
+        height: 6vh;
+    }
+
+    .b1 {
+        width: 55%;
+        height: 6vh;
+        border-radius: 2px;
+        margin-right: 30px;
+
+    }
+
+    .b1d {
+        background: black;
+        color: white;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    .b2d {
+        width: 10%;
+        height: 3vh;
+        background-color: #ffc107;
+    }
+
+    .b2d img {
+        width: 100%;
+        height: 10px;
+    }
+
+    .b1d img {
+        width: 10%;
+        height: 10px;
+    }
+
+    .new_product {
+        width: 100%;
+        height: 80vh;
+        margin-top: 20px;
+        position: relative;
+
+    }
+
+    .new_porduct_box {
+        width: 80%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        margin-left: 11%;
+    }
+
+    .new_product h1 {
+        text-align: end;
+        width: 22%;
+
+    }
+
+    .nep {
+        width: 15%;
+        height: 70vh;
+        background-color: #ac9c6c;
+    }
+
+    .newlat {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .newlatm {
+        width: 80%;
+        height: 30vh;
+        background-color: #ffc107;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 100px;
+
+    }
+
+    .por1 {
+        width: 40%;
+        height: 30vh;
+
+    }
+
+    .por2 {
+        width: 40%;
+        height: 17vh;
+        margin: 10px;
+        margin-top: 50px;
+        border-radius: 30px;
+        background-color: white;
+        text-align: end;
+    }
+
+    .por2 button {
+        width: 50%;
+        height: 8vh;
+        border-radius: 20px;
+        display: block;
+        background-color: #ffc107;
+        margin-top: 30px;
+        margin-left: 40%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 80vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        margin-top: 22px;
+
+    }
+
+    .footer3,
+    .footer2 {
+        margin-top: 40px;
+        width: 10%;
+        height: 50vh;
+    }
+
+    .footer1 {
+        margin-top: 40px;
+        width: 40%;
+        height: 50vh;
+    }
+
+    .footer1 img {
+        width: 40%;
+        height: 10vh;
+
+    }
+
+    .footer1 h2 img {
+        width: 6%;
+        height: 6vh;
+
+    }
+
+    .footer4 {
+        width: 40%;
+        height: 50vh;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .footer4 img {
+        width: 4%;
+        height: 4vh;
+    }
+
+    .footer2 a,
+    .footer3 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .address {
+        width: 100%;
+        height: 40px;
+        background-color: #ffc107;
+        text-align: center;
+        color: black;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .gur {
+            width: 50%;
+            height: 40vh;
+            text-align: center;
+        }
+
+        .gur h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    /* .nai , .naii{
+        display: none;
+    }  */
+    .headermob,
+    .headermob1 {
+        display: none;
+    }
+
+    input[type='Checkbox'],
+    label {
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .header {
+            width: 100%;
+            height: 110vh;
+            background-image: url(./img/Grupo\ 239.png);
+            background-repeat: no-repeat;
+            background-size: 100% 80vh;
+            background-position: right
+        }
+
+        .nav1,
+        .nav2 {
+            display: none;
+        }
+
+        .nai,
+        .naii {
+            /* display: block; */
+            /* padding: 20px; */
+            width: 20px;
+        }
+
+        .gur {
+            display: none;
+        }
+
+        .headermob,
+        .headermob1 {
+            display: block;
+        }
+
+        .headermob {
+            width: 100%;
+            height: 9%;
+            position: relative;
+
+        }
+
+        .nav1a,
+        .nav2a {
+            width: 25%;
+            height: 60vh;
+        }
+
+        .nav1a {
+            left: -100%;
+            transition: 2s;
+            transform: 3s;
+            position: relative;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            transform: 1s;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(7, 11, 253);
+        }
+
+        .headermob label img {
+            height: 9vh;
+        }
+
+        .nav1 .naii a img {
+            width: 100%;
+            height: 70vh;
+        }
+
+        .headermob1 label img {
+            height: 9vh;
+            position: absolute;
+            right: 1;
+        }
+
+        input[type='Checkbox'] {
+            display: none;
+
+        }
+
+        label {
+            display: block;
+        }
+
+        .in:checked~.nav1a {
+            left: 0;
+        }
+
+        .gef {
+            width: 40%;
+            height: 14vh;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 43vh;
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./img/Grupo\ 239.png);
+            background-repeat: no-repeat;
+            background-size: 100% 80vh;
+            background-position: right;
+        }
+
+        .ged {
+            width: 30%;
+            height: 10vh;
+        }
+
+        .blackp {
+            width: 100%;
+            height: 70vh;
+            background-color: black;
+            margin-top: 100px;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .mbp1,
+        .mbp {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+        }
+
+        .bpr {
+            width: 50%;
+            height: 16vh;
+            margin-top: 12px;
+            color: white;
+            border-left: 6px solid white;
+        }
+
+        .bp_lst {
+            margin-top: 50px;
+            width: 100%;
+            height: 20vh;
+            text-align: end;
+        }
+
+        .bp_1st img {
+            width: 100%;
+            height: 10vh;
+        }
+
+        .bp_lst img {
+            width: 10%;
+            height: 10vh;
+        }
+
+        .main_product {
+            width: 100%;
+            height: 470vh;
+        }
+
+        .pro1 {
+            width: 100%;
+            height: 160vh;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .first_product {
+            width: 100%;
+            height: 180vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            width: 100%;
+            height: 180vh;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .bcard {
+            width: 100%;
+            height: 75vh;
+            background-image: url('./img/Grupo 99.png');
+            background-repeat: no-repeat;
+            background-size: 100% 60vh;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .sc1 {
+            width: 100%;
+            height: 50vh;
+            background-image: url('./img/Grupo de máscara 16.png');
+            background-repeat: no-repeat;
+            background-size: 100% 48vh;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .sc2 {
+            width: 100%;
+            height: 60vh;
+            background-image: url('./img/Grupo 332.png');
+            background-repeat: no-repeat;
+            background-size: 100% 48vh;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .scard {
+            width: 100%;
+            height: 130vh;
+            justify-content: space-around;
+        }
+
+        .cl {
+            width: 100%;
+            height: 30vh;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .cl {
+            width: 100%;
+            height: 120vh;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .cl1 {
+            width: 100%;
+            height: 120vh;
+            background-image: url('./img/Grupo 330.png');
+            background-repeat: no-repeat;
+            background-size: 100% 50vh;
+            color: white;
+            text-align: center;
+        }
+
+        .cl2 {
+            width: 100%;
+            height: 120vh;
+            position: relative;
+            background-image: url('./img/Grupo 328.png');
+            background-repeat: no-repeat;
+            background-size: 100% 58vh;
+            color: white;
+            text-align: center;
+        }
+
+        .new_porduct_box {
+            width: 80%;
+            height: 130vh;
+            flex-direction: column;
+            justify-content: space-around;
+            position: absolute;
+        }
+
+        .new_product {
+            width: 100%;
+            height: 140vh;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .fsale {
+            height: 140vh;
+            background-color: #ffc107;
+            flex-direction: column;
+            width: 85%;
+            justify-content: space-between;
+            font-size: 24px;
+            margin-top: 40vh;
+        }
+
+        .sp {
+            width: 100%;
+            height: 34vh;
+        }
+
+        .sp th,
+        .sp td {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .sp1 {
+            margin-top: 42px;
+            width: 100%;
+            height: 32vh;
+            background-color: white;
+            border-radius: 22px;
+            background-image: url(./img/alienwear.png);
+            background-repeat: no-repeat;
+            background-size: 30% 20vh;
+            text-align: right;
+            position: relative;
+        }
+
+        .newlat {
+            width: 80%;
+            height: 90vh;
+            margin-left: 0px;
+        }
+
+        .por1 {
+            width: 100%;
+            height: 30vh;
+        }
+
+        .por2 {
+            width: 80%;
+            height: 17vh;
+            /* margin: 10px; */
+            margin-top: 50px;
+            border-radius: 30px;
+            background-color: white;
+            text-align: end;
+        }
+
+        .newlatm {
+            /* width: 100%;
+    height: 90vh;
+    background-color: #ffc107;
+    border-radius: 20px;
+   flex-direction: column;
+    justify-content: space-around; */
+            display: none;
+        }
+
+        .footer {
+            width: 100%;
+            height: 110vh;
+            background-color: black;
+            color: white;
+            flex-direction: column;
+            justify-content: space-around;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+        }
+
+        .footer3,
+        .footer2 {
+            display: none;
+        }
+
+        .footer1 {
+            margin-top: 40px;
+            width: 100%;
+            height: 40vh;
+        }
+
+        .footer4 {
+            width: 100%;
+            height: 40vh;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .main_product {
+            width: 100%;
+            height: 470vh;
+        }
+
+        .pro1 {
+            width: 100%;
+            height: 210vh;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 40vh;
+        }
+
+        .first_product {
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        .new_product {
+            width: 100%;
+            height: 210vh;
+            margin-top: 80vh;
+            position: relative;
+        }
+
+        /* .fsale {
+    height: 30vh;
+    background-color: #ffc107;
+    display: flex;
+    width: 95%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    justify-content: space-between;
+    padding-right: 42px;
+} */
+        div {
+            display: block;
+        }
+
+        .fp {
+            width: 100%;
+            height: 70vh;
+        }
+
+        .first_product {
+            width: 100%;
+            height: 180vh;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="nav1">
+
+            <div class="na1"><a href=""><img src="./icons/Caminho 2.png" alt="no image found"></a></div>
+            <div class="na1"><a href=""><img src="./icons/Caminho 3.png" alt="no image found"></a></div>
+            <div class="na1"><a href=""><img src="./icons/Caminho 6.png" alt="no image found"></a></div>
+            <div class="na1"><a href="">
+                    <h1> Category1 </h1>
+                </a></div>
+            <div class="na1"><a href="">
+                    <h1> Category2 </h1>
+                </a></div>
+        </div>
+        <div class="nav2">
+
+            <div class="na2"><a href="">
+                    <h1> Category1</h1>
+                </a></div>
+            <div class="na2"><a href="">
+                    <h1> Category2</h1>
+                </a></div>
+            <div class="na2"><a href="">
+                    <h1> Category3</h1>
+                </a></div>
+            <div class="na2"><a href="">
+                    <h1> Category4</h1>
+                </a></div>
+        </div>
+        <div class="headermob">
+            <input type="checkbox" id="cheack" class="in">
+            <label for="cheack"><img src="./icons/menuicon.png" alt=""></label>
+            <div class="nav1a">
+
+                <div class="nai"><a href=""><img src="./icons/Caminho 2.png" alt="no image found"></a></div>
+                <div class="nai"><a href=""><img src="./icons/Caminho 3.png" alt="no image found"></a></div>
+                <div class="nai"><a href=""><img src="./icons/Caminho 6.png" alt="no image found"></a></div>
+                <div class="nai"><a href="">
+                        <h1> Category1 </h1>
+                    </a></div>
+                <div class="nai"><a href="">
+                        <h1> Category2 </h1>
+                    </a></div>
+                <div class="naii"><a href=""><img src="./icons/Caminho 8.png" alt="no image found"></a></div>
+                <div class="naii"><a href="">
+                        <h1> Home </h1>
+                    </a></div>
+                <div class="naii"><a href="">
+                        <h1> Category1</h1>
+                    </a></div>
+                <div class="naii"><a href="">
+                        <h1> Category2</h1>
+                    </a></div>
+                <div class="naii"><a href="">
+                        <h1> Category3</h1>
+                    </a></div>
+                <div class="naii"><a href="">
+                        <h1> Category4</h1>
+                    </a></div>
+            </div>
+        </div>
+
+
+
+        <div class="gur">
+
+            <h1><span>gammer</span><br> NOTEBOOK GAMER <br>ALIENWARE M15 R6</h1>
+            <h2>$1.000</h2>
+        </div>
+        <div class="gef">
+            <div class="ges"><img src="./img/nvidia_gtx_logo.png" alt=""></div>
+            <div class="ged"><button>ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button></div>
+            <div class="gea">
+                <div class="dil"><img src="./icons/Caminho 6.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="blackp">
+        <div class="bp_1st"><img src="./img/Grupo 79.png" alt=" no pic"></div>
+        <div class="mbp1">
+
+            <div class="bp"><img src="./icons/zero.gif" alt="">
+                <h2>For Delivery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+            <div class="bpr"><img src="./icons/zero.gif" alt="">
+                <h2>Best Qalitier</h2>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+        </div>
+        <div class="mbp">
+            <div class="bp1"><img src="./icons/zero.gif" alt="">
+                <h2>50% OFF</h2>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+            <div class="bp1"><img src="./icons/zero.gif" alt="">
+                <h2>High Qalitier</h2>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+        </div>
+        <div class="bp_lst"><img src="./img/Grupo 79.png" alt=" no pic"></div>
+    </div>
+    <div class="pap_srch">
+        <div class="srch">
+            <h1>Popular Search</h1>
+        </div>
+        <div class="pap_dot"><button class="bl"></button><button class="gry"> </button> <button class="hf"> </button>
+        </div>
+    </div>
+    <div class="main_product">
+        <div class="pro1">
+            <div class="first_product">
+                <div class="fp"> <button>new</button> <img src="./img/alienwear.png" alt="">
+                    <h2>Dick top screen</h2>
+                    <h2><del>$500</del></h2>
+                    <h1>$1000</h1><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png"
+                            alt=""></button><button class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+                <div class="fp" style="margin-top: 24px;"><img src="./img/headset.png" alt="">
+                    <h2>Dick top screen</h2>
+                    <h2><del>
+                            <h1>$500</h1><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png"
+                                    alt=""></button><button class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+            </div>
+            <div class="first_product">
+                <div class="fp"> <button>new</button><img src="./img/mouse.png" alt="">
+                    <h2>Dick top screen</h2>
+                    <h2><del>$800</del></h2>
+                    <h1>$700</h1><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button><button
+                        class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+                <div class="fp"> <button>new</button><img src="./img/MONITOR.png" alt="">
+                    <h2>Dick top screen</h2>
+                    <h2><del>$500</del></h2>
+                    <h1>$1400</h1><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png"
+                            alt=""></button><button class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="bcard">
+                <h1>Category 1</h1><u>
+                    <h3> SEE MORE</h3>
+                </u>
+            </div>
+            <div class="scard">
+                <div class="sc1">
+                    <h1>Category 2</h1><u>
+                        <h3> SEE MORE</h3>
+                    </u>
+                </div>
+                <div class="sc2">
+                    <h1>Category 3</h1><u>
+                        <h3> SEE MORE</h3>
+                    </u>
+                </div>
+            </div>
+        </div>
+        <div class="cl">
+            <div class="cl1">
+                <h1>Category 4</h1><u>
+                    <h3> SEE MORE</h3>
+                </u>
+            </div>
+            <div class="cl2">
+                <h1>Category 5</h1><u>
+                    <h3> SEE MORE</h3>
+                </u>
+            </div>
+        </div>
+    </div>
+    <div class="fsale">
+        <div class="spw"><img src="./img/Grupo 79.png" alt=""></div>
+        <div class="sp">
+            <h1>Falsh Sale!</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <table>
+                <tr>
+                    <th>05</th>
+                    <th>07</th>
+                    <th>45</th>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Days</td>
+                    <td>Days</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sp1"><button style="background-color: black ;color: white;text-align: right;">20% OFF</button>
+            <p> Notebook Dell Aliginware <br> 17.3 uhd cil9 16 sedrtx <br><b style="font-size: 22px;"> 500$</b></p>
+            <button class="b1d">ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button><button class="b2d"><img
+                    src="./icons/Caminho 6.png" alt=""></button>
+        </div>
+        <div class="sp1"><button style="background-color: black ;color: white;text-align: left;">20% OFF</button>
+            <p> Notebook Dell Aliginware <br> 17.3 uhd cil9 16 sedrtx<br><b style="font-size: 22px;"> 500$</b></p>
+            <button class="b1d">ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button><button class="b2d"><img
+                    src="./icons/Caminho 6.png" alt=""></button>
+        </div>
+    </div>
+    <div class="new_product">
+        <h1>New Product</h1>
+
+        <div class="new_porduct_box">
+            <div class="first_product">
+                <div class="fp"> <button>new</button> <img src="./img/WEBCAM.png" alt="">
+                    <p> Notebook Dell Aliginware <br> 17.3 uhd cil9 16 sedrtx <br><b style="font-size: 22px;"> 500$</b>
+                    </p><button class="b1">ADD TO CARD <img src="./icons/Caminho 6.png" alt=""></button><button
+                        class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+                <div class="fp" style="margin-top: 24px;"><button>new</button><img src="./img/PROJETOS.png" alt="">
+                    <p> Notebook Dell Aliginware <br> 17.3 uhd cil9 16 sedrtx <br><b style="font-size: 22px;"> 500$</b>
+                    </p><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button><button
+                        class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+            </div>
+            <div class="first_product">
+                <div class="fp"> <button>new</button><img src="./img/all in on.png" alt="">
+                    <p> Notebook Dell Aliginware <br> 17.3 uhd cil9 16 sedrtx <br><b style="font-size: 22px;"> 500$</b>
+                    </p><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button><button
+                        class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+                <div class="fp"> <button>new</button><img src="./img/XPS.png" alt="">
+                    <p> Notebook Dell Aliginware <br> 17.3 uhd cil9 16 sedrtx <br><b style="font-size: 22px;"> 500$</b>
+                    </p><button class="b1">ADD TO CARD <img src="./icons/Caminho 3.png" alt=""></button><button
+                        class="b2"><img src="./icons/Caminho 6.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="newlat"> -->
+    <div class="newlatm">
+        <div class="por1">
+            <h1>New Latter Signup</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam excepturi dicta, harum, a qui
+                perspiciatis iste debitis non in aut velit sit enim vitae consequuntur dolores! Quos quaerat corrupti
+                velit.</p>
+        </div>
+        <div class="por2"><button>SUBSCRIBE</button></div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+    <div class="footer">
+        <div class="footer1"><img src="./logo/LOGO 2.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, excepturi alias! Ipsum, sequi
+                praesentium dignissimos aliquid fugiat asperiores maiores repudiandae, labore nam voluptatum, incidunt
+                sit odit sunt qui at repellat.</p>
+            <h2><img src="./icons/Caminho 2.png" alt=""> <span> </span> 03555165163</h2>
+        </div>
+        <div class="footer2">
+            <h1>Menu</h1>
+            <h3><a href=""> Menu1 </a><br><br>
+                <a href=""> Menu2 </a><br><br>
+                <a href=""> Menu3 </a><br><br>
+                <a href=""> Menu4 </a><br><br>
+                <a href=""> Menu5 </a><br>
+            </h3>
+        </div>
+        <div class="footer3">
+            <h1>Menu</h1>
+            <h3> <a href=""> Menu1 </a><br><br>
+                <a href=""> Menu2 </a><br><br>
+                <a href=""> Menu3 </a><br><br>
+                <a href=""> Menu4 </a><br><br>
+                <a href=""> Menu5 </a><br><br>
+            </h3>
+        </div>
+
+        <div class="footer4">
+            <h1>Follow us</h1>
+            <h3><img src="./icons/Grupo 314.png" alt="">FACEBOOK</h3>
+            <h3><img src="./icons/Grupo 315.png" alt="">TWEETER</h3>
+            <h3><img src="./icons/Grupo 316.png" alt="">YOUTUBE</h3>
+            <h3><img src="./icons/Grupo 317.png" alt="">INSTRAGAM</h3>
+            <h3><img src="./icons/Grupo 318.png" alt="">PALAGAR</h3>
+
+        </div>
+        <div class="address">
+            <address>Web Developer: Anjum Balghari</address>
+        </div>
+    </div>
+</body>
+
+</html>

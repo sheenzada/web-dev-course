@@ -1,0 +1,698 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale house</title>
+</head>
+<style>
+    .home{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/hero-bg.jpg);
+         background-repeat: no-repeat;
+         background-size: 60% 100vh;
+         background-position: right;
+         
+       
+    }
+    .navbar{
+        display: flex;
+       justify-content: center;
+    }
+    .meta{
+        width: 60%;
+        height: 5vh;
+        justify-content: space-between;
+       
+    }
+    a{
+        color:black;
+        /* font-size: 28px; */
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        text-decoration: none;
+    }
+    .aboutmeta {
+    width: 50%;
+    height: 60vh;
+   
+}
+    .aboutmeta h1{
+        /* font-size: 40px; */
+        font-family: Century Schoolbook;
+        
+    }
+    .aboutmeta button{
+        width: 20%;
+        height: 5vh;
+       margin-left: 20px; 
+        background-color: rgb(139, 7, 248);
+    
+    }
+  button{
+        width: 40%;
+        height: 7vh;
+        border-radius: 20px;
+        background-color: blue;
+    
+    }
+    .apartment{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* margin-top: 60px; */
+        align-items: center;
+}
+.about p{
+    line-height: 50px;
+}
+.room, .about{
+    width: 40%;
+    height: 50vh;
+}
+/* @media screen and (max-width:1400px){
+  
+
+
+} */
+
+.sale{
+    width: 100%;
+    height: 100vh;
+   
+
+  
+}
+.house1 , .house2{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+#sale_had{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.h1ap1 , .h1ap2 , .h1ap3 , .h2ap1 , .h2ap2 , .h2ap3 {
+    width: 30%;
+    height: 350px;
+
+}
+.h1ap1 img , .h1ap2 img , .h1ap3 img , .h2ap1 img , .h2ap2 img , .h2ap3 img{
+      width: 100%;
+      height: 40vh;
+}
+.find{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-top: 300px;
+}
+.find button{
+    background-color: white;
+   
+}
+.find button:hover{
+    background-color:blueviolet;
+   
+}
+@media screen and (max-width:1200px){
+   
+    .sale{
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+}
+#sale_had{
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+   
+}
+.house1 , .house2{
+    width: 40%;
+    height: 1600px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.h1ap1 img , .h1ap2 img , .h1ap3 img , .h2ap1 img , .h2ap2 img , .h2ap3 img{
+      width: 100%;
+      height: 40vh;
+}
+.h1ap1 img{
+    width: 100%;
+}
+.h1ap1 , .h1ap2 , .h1ap3 , .h2ap1 , .h2ap2 , .h2ap3 {
+    width: 100%;
+    height: 350px;
+
+}
+.find {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.apartment {
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* margin-top: 70px; */
+    align-items: center;
+}
+}
+
+ .pricing{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+ }
+ .pre1 , .pre2 , .pre3{
+    width: 30%;
+    height: 550px;
+ }  
+ .pre1:hover{
+    
+    background-color: yellow;
+ }
+ .pre1st{
+ height: 80px;
+ width: 100%;
+ background-color: darkblue;
+text-align: center;
+padding-top: 1px;
+color: white;
+}
+.pre2nd{
+ height: 350px;
+ background-color: rgb(33, 33, 117);
+text-align: center;
+padding-top: 1px;
+color: white;
+}
+.pre3rd{
+    padding-top: 10px;
+ height: 70px;
+text-align: center;
+padding-top: 32px;
+color: white;
+}
+
+.main_pre{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pre1 h3 , .pre2 h3 , .pre3 h3{
+    text-align: center;
+   
+    line-height: 2px;
+}
+.pre1 p , .pre2 p , .pre3 p{
+    text-align: center;
+   line-height: 40px;
+}
+.good{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-around;
+}
+.choosecant{
+    width: 100%;
+    height: 80vh;
+    background-color: blue;
+    color: white;
+}
+.choose{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+}
+.choosecant button {
+    width: 20%;
+    height: 7vh;
+    border-radius: 20px;
+    background-color:white;
+}
+.majority{
+    width: 100%;
+    height: 40vh;
+  
+}
+.maj_main{
+    width: 90%;
+    height: 30vh;
+    border: 2px solid rgb(9, 240, 40);
+    margin: 50px;
+    display: flex;
+  
+    justify-content: space-around;
+  
+}
+
+.mj1{
+    width: 4%;
+    height: 4vh;
+    border-radius: 50%;
+    margin-top: 82px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(5, 5, 248);
+    left: -100%;
+
+}
+input[type='Checkbox']:checked~ .mj {
+    left: 0%;
+       }
+input[type="checkbox"]{
+    display: none;
+}
+.mj{
+    width: 85%;
+    height: 30px;
+    margin-top: 30px;
+}
+.mj1 img{
+    width: 100%;
+    height: 4vh;
+}
+.alo img{ 
+    width: 100px;
+    height:150px;
+    margin-top: 40px;
+    background-color: blue;
+}
+.tch{
+    width: 100%;
+    height: 70vh;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0.9;
+} .pic , .reg{
+    width: 40%;
+    height: 100vh;
+}
+.pic img{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+.reg{
+    padding: 20px;
+}
+.tch input{
+    width: 60%;
+   padding: 15px;
+      margin: 10px;
+}
+.tch input[type="area"]{
+    width: 60%;
+    height: 100px;
+}
+.tch button{
+    width: 35%;
+    height: 7vh;
+    margin-top: 30px;
+    text-align: center;
+    background-color: tomato;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    opacity: 0.9;
+
+}
+.footab{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+.foo{
+    width: 20%;
+    height: 40vh;
+}
+.foo input{
+    width: 100%;
+   padding: 10px;
+      margin-top: 20px;
+}
+.foo button{
+    width: 70%;
+   padding: 8px;
+      margin-top: 20px;
+      background-color: tomato;
+      border-radius: 0px;
+
+}
+.foo img{
+    margin: 10px;
+    margin-top: 20px;
+}
+@media screen and (max-width:1400px){
+    .apartment{
+        width: 100%;
+        height: 1200px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+     /* margin-top: 70px; */
+        align-items: center;
+}
+.room, .about{
+    width: 70%;
+    height: 40vh;
+}
+.room img{
+    width: 100%;
+}
+.about{
+    width: 100%;
+    height: 100px;
+    /* margin-top: 60px; */
+}
+.good {
+    width: 100%;
+    height: 1700px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.frn img{
+    width: 80%;
+    height: 300px;
+}
+}
+@media screen and (max-width:1100px){
+    .footer {
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(0, 255, 213);
+    opacity: 0.9;
+}
+    .footab {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    opacity: 0.9;
+}
+.foo {
+    width: 100%;
+    height: 50vh;
+}
+
+}
+@media screen and (max-width:700px){
+    .sale {
+    width: 100%;
+    height: 3500px;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+}
+.sale h1{
+    font-size: 20px;
+}
+.aboutmeta button {
+    width: 40%;
+    height: 5vh;
+    margin-left: 20px;
+    background-color: rgb(139, 7, 248);
+}
+.house1, .house2 {
+    width: 100%;
+    height: 1400px;
+    margin-top: 20px;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+/* .pricing {
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+   
+} */
+.main_pre {
+    width: 100%;
+    height: 1700px;
+   flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+}
+.pre1, .pre2, .pre3 {
+    width: 100%;
+    height: 50px;
+}
+.tch {
+    width: 100%;
+    height: 1100px;
+    background-color: blue;
+   flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    opacity: 0.9;
+}
+.pic, .reg {
+    width: 100%;
+    height: 600px;
+}
+.good {
+    width: 100%;
+    height: 1400px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 250px;
+}
+.frn{
+    width: 100%;
+}
+}
+@media screen and (max-width:530px){
+    .good {
+    width: 100%;
+    height: 1400px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  
+}
+.choosecant button {
+    width: 40%;
+    height: 7vh;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 20px;
+}
+.about p {
+    line-height: 20px;
+}
+}
+</style>
+<body>
+    <div class="home">
+       <div class="navbar">
+        <div class="meta">
+            <ul>
+                <li><a href="">Meta</a></li>
+            </ul>
+        </div>
+        <div class="meta">
+            <ul>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div><div class="meta">
+            <ul>
+                <li><a href="">signup</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="aboutmeta">
+            <h1>Meta Technology <br>
+                Baltistan</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia error ab accusantium soluta quibusdam tempora blanditiis, id mollitia quisquam facere, cum dolores excepturi, iure dolore voluptatem! Alias iure quis vero!</p>
+               <button>Learn More</button>
+        </div>
+     
+    </div>
+    <div class="apartment">
+        <div class="room">
+            <img src="./images/about-img.jpg" alt="">
+        </div>
+        <div class="about">
+            <h1>About Our Apartment</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore eius tempora odio accusamus, quod deserunt maxime, quisquam tempore, earum temporibus adipisci saepe dolores accusantium? Ex fuga magni ab quia.</p>
+            <button>Read More</button>
+
+        </div>
+    </div>
+    <div class="sale">
+       <div id="sale_had"> <h1>House For Sale</h1>
+        <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+        <div class="house1">
+        <div class="h1ap1"> <img src="./images/s-1.jpg" alt=""><h1>APERTMENTS HOUSE</h1> <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+     <div class="h1ap2"><img src="./images/s-2.jpg" alt=""><h1>APERTMENTS HOUSE</h1> <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+     <div class="h1ap3"><img src="./images/s-3.jpg" alt=""><h1>APERTMENTS HOUSE</h1> <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+        </div>
+        <div class="house2">
+            <div class="h2ap1"> <img src="./images/s-4.jpg" alt=""><h1>APERTMENTS HOUSE</h1> <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+            <div class="h2ap2"><img src="./images/s-5.jpg" alt=""><h1>APERTMENTS HOUSE</h1> <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+            <div class="h2ap3"><img src="./images/s-6.jpg" alt=""><h1>APERTMENTS HOUSE</h1> <p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+        </div>
+
+    </div>
+    <div class="find">
+        <button>Find More</button>
+    </div>
+    <div class="pricing">
+        <div id="sale_had"> <h1>Our Pricing</h1><p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+    
+     <div class="main_pre">
+      <div class="pre1">
+        <div class="pre1st"> <h3>01 </h3><h3> BASIC</h3><p></p></div>
+      <div class="pre2nd"><p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+      <div class="pre3rd"> <button>Busy Now</button></div>
+      </div>
+      <div class="pre2">
+        <div class="pre1st"> <h3>01 </h3><h3> BASIC</h3></div>
+      <div class="pre2nd"><p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+      <div class="pre3rd"> <button>Busy Now</button></div>
+      </div>
+      <div class="pre3">
+        <div class="pre1st"> <h3>01 </h3><h3> BASIC</h3></div>
+      <div class="pre2nd"><p>There are many variations of passages of Lorem Ipsum available, but the</p></div>
+      <div class="pre3rd"> <button>Busy Now</button></div>
+      </div>
+     
+      
+      
+         </div>
+         </dav>
+         <div class="good">
+            <div class="about"><h1>Very Good Deal For House</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima similique cumque officia vel quas iste harum impedit distinctio quis iure possimus, voluptatibus quibusdam! Magni atque debitis at voluptates in quaerat.</p> <button>Get aQuoit</button></div>
+            <div class="frn"><img src="./images/d-1.jpg" alt=""></div>
+            <div class="frn"><img src="./images/d-2.jpg" alt=""></div>
+    
+          </div>
+          <div class="choosecant">
+            <div id="sale_had"> <h1>Why Choose Us</h1></div>
+          <div class="choose">
+            
+            <div class="chooseitm"><img src="./images/u-1.png" alt=""><h3>1000+ <br>  Years of House</h3></div>
+            <div class="chooseitm"><img src="./images/u-2.png" alt=""><h3>20000+<br>  Projects Delivered</h3></div>
+            <div class="chooseitm"><img src="./images/u-3.png" alt=""><h3>  10000+<br>  Satisfied Customer</h3></div>
+            <div class="chooseitm"><img src="./images/u-4.png" alt=""><h3>1500+<br> Cheap Rates</h3></div>
+           
+          </div>
+          <div id="sale_had"> <button>Get A Quote</button></div>
+        </div>
+        <div id="sale_had"> <h1>What is Says Our Customer</h1></div>
+        <div class="majority">
+            <div class="maj_main">
+                <div class="mj1">
+                    <input type="Checkbox" id="cheak"> 
+                    <label for="cheak">
+                <img src="./images/prev-white.png" alt="" > </label></div>
+               
+              <div class="alo">  <img src="./images/client.jpg" alt="" ></div>
+                
+                <div class="mj"><h1>Majority</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p></div>
+                <div class="mj1"> <img src="./images/next-white.png" alt=""></div>
+
+            </div>
+        </div>
+        <div id="sale_had"> <h1>Get In Touch</h1></div>
+        <div class="tch">
+            <div class="pic"><img src="./images/about-img." alt=""></div>
+            <div class="reg"><form action="">
+                <input type="text" placeholder="Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="number" placeholder="Phone Number"><br>
+                <input type="area" placeholder="Message"><br><br> 
+              <button >Send</button>
+            </form>
+            </div>
+            
+        </div>
+        <div class="footer">
+               
+               <div class="footab">
+               <div class="foo"><h2>About Apartment</h2>
+            <img src="./images/location.png" alt="">Address <br>
+            <img src="./images/phone.png" alt=""> +92 3555165163 <br>
+            <img src="./images/mail.png" alt=""> muhammadalianjumbalghari@gmail.com
+
+            
+            </div>
+               <div class="foo"><h2>Information</h2p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet vitae sint? Repellat,  consequuntur ex!</p></div>
+               <div class="foo"><h2>Useful Link</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi dolorem architect deleniti ipsam?</p></div>
+               <div class="foo"><h2>Newsletter</h2>
+            <input type="mail" placeholder="Enter your email"><br>
+            <button>SUBSCRIBE</button><br>
+            <img src="./images/fb.png" alt="" >
+            <img src="./images/twitter.png" alt="" >
+            <img src="./images/linkedin.png" alt="" >
+            <img src="./images/youtube.png" alt="" >
+
+            </div>
+
+
+               </div>
+               
+            <hr>
+            
+            <div id="sale_had" style="color:white;"> <h2>© Design By Anjum Balghari</h2></div>
+        </div>
+</body>
+</html>
