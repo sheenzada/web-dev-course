@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task Master</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Task Master</h1>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addBtn">Add</button>
+            </div>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+            <button id="clearCompleted">Clear Done</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="stats">
+            <span id="itemsLeft">0 items left</span>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
