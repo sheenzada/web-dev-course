@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ludo Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    .board {
+        display: grid;
+        grid-template-columns: repeat(15, 40px);
+        grid-template-rows: repeat(15, 40px);
+        border: 4px solid black;
+        background: white;
+    }
+
+    .cell {
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .red { background: #ff4d4d; }
+    .green { background: #4CAF50; }
+    .yellow { background: #FFD700; }
+    .blue { background: #4da6ff; }
+
+    .token {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    .controls {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Ludo Game</h1>
+
+<div class="board" id="board"></div>
+
+<div class="controls">
+    <p id="turn">Turn: Red</p>
+    <button onclick="rollDice()">🎲 Roll Dice</button>
+    <p id="dice">Dice: -</p>
+</div>
+
+<script>
+const board = document.getElementById("board");
+const diceDisplay = document.getElementById("dice");
+const turnDisplay = document.getElementById("turn");
+
+const players = ["red", "green", "yellow", "blue"];
+let currentPlayer = 0;
+let diceValue = 0;
+
+// Simplified path (straight path)
+const path = [...Array(52).keys()];
+
+const tokens = {
+    red: { position: -1 },
+    green: { position: -1 },
+    yellow: { position: -1 },
+    blue: { position: -1 }
+};
+
+// Create board cells
+for (let i = 0; i < 225; i++) {
+    const cell = document.createElement("div");
+    cell.classList.add("cell");
+    cell.id = `cell-${i}`;
+    board.appendChild(cell);
+}
+
+// Dice roll
+function rollDice() {
+    diceValue = Math.floor(Math.random() * 6) + 1;
+    diceDisplay.innerText = "Dice: " + diceValue;
+    moveToken();
+}
+
+// Move token
+function moveToken() {
+    const player = players[currentPlayer];
+    let token = tokens[player];
+
+    if (token.position === -1 && diceValue === 6) {
+        token.position = 0;
+    } else if (token.position >= 0) {
+        token.position += diceValue;
+        if (token.position >= path.length) {
+            alert(player.toUpperCase() + " wins!");
+            resetGame();
+            return;
+        }
+    }
+
+    updateBoard();
+    nextTurn();
+}
+
+// Update board UI
+function updateBoard() {
+    document.querySelectorAll(".token").forEach(t => t.remove());
+
+    players.forEach(player => {
+        const pos = tokens[player].position;
+        if (pos >= 0) {
+            const cellIndex = path[pos];
+            const cell = document.getElementById(`cell-${cellIndex}`);
+            const tokenDiv = document.createElement("div");
+            tokenDiv.className = `token ${player}`;
+            cell.appendChild(tokenDiv);
+        }
+    });
+}
+
+// Next turn
+function nextTurn() {
+    currentPlayer = (currentPlayer + 1) % players.length;
+    turnDisplay.innerText = "Turn: " + players[currentPlayer].toUpperCase();
+}
+
+// Reset game
+function resetGame() {
+    players.forEach(p => tokens[p].position = -1);
+    currentPlayer = 0;
+    updateBoard();
+}
+</script>
+
+</body>
+</html>
