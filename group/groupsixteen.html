@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p::first-line {
+        color: red;
+    }
+    p::first-letter {
+        font-size: 40px;
+    }
+    p::after {
+        content: url(img/observation-urban-building-business-steel_1127-2397.avif);
+    }
+    .main {
+        width: 300px;
+        height: 300px;
+        background-color: blueviolet;
+        transition: 2s;
+        font-size: 40px;
+        text-align: center;
+        color: whitesmoke;
+        transform: rotate(360deg);
+    }
+    .main:hover{
+        transform: rotate(360deg);
+    }
+    .main1{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(118, 203 , 119);
+        transition: 2s;
+        font-size: 40px;
+        text-align: center;
+        color: whitesmoke;
+        transform: translate(100px, 200px);
+    }
+    .main2{
+        width: 300px;
+        height: 300px;
+        background-color: blueviolet;
+        transition: 2s;
+        font-size: 40px;
+        text-align: center;
+        color: whitesmoke;
+        transform: scale(0.4);
+        transform: scaleY(5);
+    }
+    .skew {
+        width: 300px;
+        height: 300px;
+        background-color: blueviolet;
+        transform: 2s;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        transform: 3s;
+    }
+    .skew:hover{
+        transform: skew(360deg);
+    }
+</style>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, totam cumque alias aliquid ullam dolorum iure enim ex fugit sequi repellendus facilis saepe quos corporis? Velit voluptate ducimus possimus at?</p>
+
+    <div class="main">rotate</div>
+    <div class="main1">translate</div>
+    <div class="main2">scale</div>
+    <div class="skew">skew</div>
+</body>
+</html>
