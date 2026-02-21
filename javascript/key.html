@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive HP Laptop Keyboard</title>
+    <style>
+        :root {
+            --chassis-grey: #e0e0e0;
+            --key-bg: #ffffff;
+            --key-text: #444;
+            --screen-bg: #1a1a1a;
+            --accent: #0078d7;
+        }
+
+        body {
+            background-color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* Laptop Container */
+        .laptop {
+            width: 900px;
+            background: var(--chassis-grey);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            border-bottom: 5px solid #bcbcbc;
+        }
+
+        /* Monitor/Display */
+        .screen {
+            background: var(--screen-bg);
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            border: 10px solid #333;
+            margin-bottom: 20px;
+        }
+
+        #display {
+            width: 100%;
+            height: 120px;
+            background: transparent;
+            color: #00ff00;
+            border: none;
+            font-family: 'Consolas', monospace;
+            font-size: 1.2rem;
+            outline: none;
+            resize: none;
+        }
+
+        /* Keyboard Grid */
+        .keyboard {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            user-select: none;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        /* Key Styling */
+        .key {
+            background: var(--key-bg);
+            color: var(--key-text);
+            min-width: 42px;
+            height: 42px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #b0b0b0;
+            transition: all 0.05s ease;
+            text-transform: capitalize;
+        }
+
+        .key:active, .key.active {
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 #b0b0b0;
+            background: #f0f0f0;
+            color: var(--accent);
+        }
+
+        /* Specific HP Key Widths */
+        .wide { min-width: 70px; }
+        .extra-wide { min-width: 100px; }
+        .space { width: 320px; }
+        .backspace { width: 90px; }
+        .enter { width: 105px; }
+        .shift { width: 120px; }
+        
+        .f-key { font-size: 0.65rem; color: #777; }
+        .small-text { font-size: 0.7rem; }
+
+        .arrow-group { display: flex; flex-direction: column; gap: 2px; }
+        .half-key { height: 20px; min-width: 42px; font-size: 0.6rem; }
+
+    </style>
+</head>
+<body>
+
+    <h2 style="color: white; margin-bottom: 20px;">HP Pavilion Simulator</h2>
+
+    <div class="laptop">
+        <div class="screen">
+            <textarea id="display" placeholder="Type here using the keyboard below..."></textarea>
+        </div>
+
+        <div class="keyboard">
+            <div class="row">
+                <div class="key f-key">esc</div>
+                <div class="key f-key">f1</div><div class="key f-key">f2</div><div class="key f-key">f3</div>
+                <div class="key f-key">f4</div><div class="key f-key">f5</div><div class="key f-key">f6</div>
+                <div class="key f-key">f7</div><div class="key f-key">f8</div><div class="key f-key">f9</div>
+                <div class="key f-key">f10</div><div class="key f-key">f11</div><div class="key f-key">f12</div>
+                <div class="key backspace">delete</div>
+            </div>
+
+            <div class="row">
+                <div class="key">`</div><div class="key">1</div><div class="key">2</div><div class="key">3</div>
+                <div class="key">4</div><div class="key">5</div><div class="key">6</div><div class="key">7</div>
+                <div class="key">8</div><div class="key">9</div><div class="key">0</div><div class="key">-</div>
+                <div class="key">=</div><div class="key backspace">backspace</div>
+            </div>
+
+            <div class="row">
+                <div class="key wide">tab</div><div class="key">q</div><div class="key">w</div><div class="key">e</div>
+                <div class="key">r</div><div class="key">t</div><div class="key">y</div><div class="key">u</div>
+                <div class="key">i</div><div class="key">o</div><div class="key">p</div><div class="key">[</div>
+                <div class="key">]</div><div class="key">\</div>
+            </div>
+
+            <div class="row">
+                <div class="key extra-wide">caps lock</div><div class="key">a</div><div class="key">s</div><div class="key">d</div>
+                <div class="key">f</div><div class="key">g</div><div class="key">h</div><div class="key">j</div>
+                <div class="key">k</div><div class="key">l</div><div class="key">;</div><div class="key">'</div>
+                <div class="key enter">enter</div>
+            </div>
+
+            <div class="row">
+                <div class="key shift">shift</div><div class="key">z</div><div class="key">x</div><div class="key">c</div>
+                <div class="key">v</div><div class="key">b</div><div class="key">n</div><div class="key">m</div>
+                <div class="key">,</div><div class="key">.</div><div class="key">/</div>
+                <div class="key shift">shift</div>
+            </div>
+
+            <div class="row">
+                <div class="key small-text">ctrl</div><div class="key small-text">fn</div><div class="key small-text">win</div>
+                <div class="key small-text">alt</div><div class="key space">space</div><div class="key small-text">alt</div>
+                <div class="key small-text">ctrl</div>
+                <div class="key">←</div>
+                <div class="arrow-group">
+                    <div class="key half-key">↑</div>
+                    <div class="key half-key">↓</div>
+                </div>
+                <div class="key">→</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById('display');
+        const keys = document.querySelectorAll('.key');
+
+        // Typing logic
+        function type(char) {
+            const val = char.toLowerCase();
+            if (val === 'backspace' || val === 'delete') {
+                display.value = display.value.slice(0, -1);
+            } else if (val === 'enter') {
+                display.value += '\n';
+            } else if (val === 'space') {
+                display.value += ' ';
+            } else if (val === 'tab') {
+                display.value += '    ';
+            } else if (char.length === 1) {
+                display.value += char;
+            }
+            display.scrollTop = display.scrollHeight;
+        }
+
+        // Mouse Click Events
+        keys.forEach(key => {
+            key.addEventListener('mousedown', () => {
+                type(key.innerText);
+            });
+        });
+
+        // Physical Keyboard Sync
+        window.addEventListener('keydown', (e) => {
+            let keyMatch = e.key.toLowerCase();
+            if (keyMatch === ' ') keyMatch = 'space';
+            
+            keys.forEach(k => {
+                if (k.innerText.toLowerCase() === keyMatch) {
+                    k.classList.add('active');
+                    // We don't call type() here because the browser 
+                    // already inputs the letter into the textarea
+                }
+            });
+        });
+
+        window.addEventListener('keyup', () => {
+            keys.forEach(k => k.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>
