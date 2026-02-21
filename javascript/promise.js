@@ -101,46 +101,46 @@
 
 
 
-function stepOne() {
-  return Promise.resolve("Data from Step One");
-}
+// function stepOne() {
+//   return Promise.resolve("Data from Step One");
+// }
 
-function stepTwo(data) {
-  console.log(data); // "Data from Step One"
-  return "Data from Step Two"; // This value is implicitly wrapped in a new Promise
-}
+// function stepTwo(data) {
+//   console.log(data); // "Data from Step One"
+//   return "Data from Step Two"; // This value is implicitly wrapped in a new Promise
+// }
 
-function stepThree(data) {
-  console.log(data); // "Data from Step Two"
-  return "Final Result";
-}
+// function stepThree(data) {
+//   console.log(data); // "Data from Step Two"
+//   return "Final Result";
+// }
 
-stepOne()
-  .then(stepTwo)
-  .then(stepThree)
-  .then(finalResult => console.log(finalResult)) // "Final Result"
-  .catch(error => console.error(error));
-
-
+// stepOne()
+//   .then(stepTwo)
+//   .then(stepThree)
+//   .then(finalResult => console.log(finalResult)) // "Final Result"
+//   .catch(error => console.error(error));
 
 
 
 
 
-  function tajwar (){
-    return Promise.resolve("hello wold")
-  }
-  function ali (){
-    console.log("hello guys");
+
+
+//   function tajwar (){
+//     return Promise.resolve("hello wold")
+//   }
+//   function ali (){
+//     console.log("hello guys");
     
-  }
-  function inam (){
-    console.log("ga yo la jani");
+//   }
+//   function inam (){
+//     console.log("ga yo la jani");
     
-  }
-  tajwar()
-    .then(ali)
-    .then(inam)
+//   }
+//   tajwar()
+//     .then(ali)
+//     .then(inam)
 
 
 

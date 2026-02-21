@@ -1,0 +1,58 @@
+body{
+    font-family: Arial;
+    background: #dcdcdc;
+    text-align: center;
+
+
+}
+
+#screen{
+    width: 95%;
+    height: 70px;
+    margin: 20px auto;
+    font-size: 22px;
+    padding: 10px;
+    border: 2px solid #333;
+    background: white;
+    border-radius: 8px;
+    text-align: left;
+    overflow-x:auto;
+}
+
+.keyboard{
+    width: 98%;
+    margin: auto;
+}
+
+.row{
+    margin: 5px 0;
+}
+
+.key {
+    display: inline-block;
+    padding: 12px;
+    margin: 3px;
+    min-width: 40px;
+    background: #2c2c2c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+}
+
+.key:hover{
+    background: #555;
+}
+
+.wide{
+    min-width: 80px;
+}
+
+.space{
+    width: 300px;
+}
+
+.active{
+    background: orange !important;
+}
