@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Dashboard</title>
+<style>
+/* --- CSS --- */
+* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+body {background:#f4f7f6;}
+.dashboard {display:flex; min-height:100vh;}
+.sidebar {width:220px; background:#1f2937; color:#fff; padding:20px;}
+.sidebar h2 {text-align:center; margin-bottom:30px;}
+.sidebar ul {list-style:none;}
+.sidebar ul li {padding:12px 10px; margin:10px 0; cursor:pointer; border-radius:5px;}
+.sidebar ul li.active, .sidebar ul li:hover {background:#4f46e5;}
+.main-content {flex:1; padding:20px;}
+header {display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;}
+header h1 {color:#111827;}
+.user-info {background:#4f46e5; color:#fff; padding:8px 15px; border-radius:20px;}
+.cards {display:flex; gap:20px; margin-bottom:30px;}
+.card {flex:1; background:#fff; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+.card h3 {margin-bottom:10px; color:#374151;}
+.card p {font-size:24px; font-weight:bold;}
+.table-container {background:#fff; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+.table-container h2 {margin-bottom:15px; color:#111827;}
+table {width:100%; border-collapse:collapse;}
+table th, table td {text-align:left; padding:12px; border-bottom:1px solid #e5e7eb;}
+table th {background:#f9fafb; color:#6b7280;}
+table td {color:#374151;}
+table tr:hover {background:#f3f4f6;}
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>HotelAdmin</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Rooms</li>
+      <li>Reservations</li>
+      <li>Guests</li>
+      <li>Revenue</li>
+      <li>Settings</li>
+    </ul>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Header -->
+    <header>
+      <h1>Dashboard</h1>
+      <div class="user-info">Admin</div>
+    </header>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>Rooms Booked</h3>
+        <p id="roomsBooked">0</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p id="revenue">$0</p>
+      </div>
+      <div class="card">
+        <h3>Guests</h3>
+        <p id="guests">0</p>
+      </div>
+    </div>
+
+    <!-- Reservation Table -->
+    <div class="table-container">
+      <h2>Recent Reservations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Guest Name</th>
+            <th>Room</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="reservationTable">
+          <!-- JS will inject data -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script>
+// --- JavaScript ---
+// Sample reservations
+const reservations = [
+  { name: "John Doe", room: "101", checkin: "2026-03-01", checkout: "2026-03-05", status: "Checked In" },
+  { name: "Jane Smith", room: "202", checkin: "2026-03-02", checkout: "2026-03-06", status: "Pending" },
+  { name: "Mike Johnson", room: "303", checkin: "2026-03-03", checkout: "2026-03-07", status: "Checked Out" },
+  { name: "Emily Davis", room: "404", checkin: "2026-03-04", checkout: "2026-03-08", status: "Checked In" }
+];
+
+// Populate table
+const tableBody = document.getElementById("reservationTable");
+reservations.forEach(res => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>${res.name}</td>
+    <td>${res.room}</td>
+    <td>${res.checkin}</td>
+    <td>${res.checkout}</td>
+    <td>${res.status}</td>
+  `;
+  tableBody.appendChild(tr);
+});
+
+// Populate cards
+document.getElementById("roomsBooked").textContent = reservations.length;
+document.getElementById("revenue").textContent = "$" + reservations.length * 120;
+document.getElementById("guests").textContent = reservations.length;
+</script>
+
+</body>
+</html>
