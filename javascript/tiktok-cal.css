@@ -1,0 +1,43 @@
+.buttons-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-main);
+    transition: all 0.2s cubic-bezier(0.4, 0 , 0.2 , 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.btn:hover{
+    transform: translateY((-2px));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn:active{
+    transform: translateY(0);
+}
+
+.btn-num{
+    background: var(--btn-num);
+}
+.btn-num:hover{
+    background: rgab(255, 255 , 255, 0.15);
+}
+
+.btn-sci{
+    background: var(--btn-sci);
+    color: var(--neon-purple);
+    font-size: 0.9rem;
+}
